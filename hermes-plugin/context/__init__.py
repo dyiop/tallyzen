@@ -1,9 +1,9 @@
 """context plugin — shared business memory ("the case file") for the agents.
 
 The three agents coordinate through a shared store: the Analyst writes market
-signals, the Advisor writes the basic fields of every invoice it books, and any
-agent can pull the company context (profile + recent invoices + recent signals)
-as a brief.
+signals, the Advisor writes invoice basics and durable business insights (gaps,
+risks, product-market fit), and any agent can pull the company context
+(profile + recent invoices + signals + insights) as a brief.
 
 Storage is embedded here (no separate connector) with two modes:
   - LOCAL (default): a JSON file at ~/.hermes/cache/tallyzen-memory/store.json.
@@ -95,6 +95,7 @@ def _company_context():
         "recent_invoices": [r["data"] for r in _recall(kind="invoice", limit=10)],
         "recent_signals": [r["data"] for r in _recall(kind="signal", limit=10)],
         "recent_notes": [r["data"] for r in _recall(kind="note", limit=10)],
+        "insights": [r["data"] for r in _recall(kind="insight", limit=15)],
         "backend": "convex" if CONVEX_URL else "local",
     }
 
@@ -143,6 +144,15 @@ def handle_remember_note(args, **kw):
         return _err("Memory unavailable: " + str(e))
 
 
+def handle_remember_insight(args, **kw):
+    data = {"area": args.get("area", ""), "insight": args.get("insight", ""),
+            "evidence": args.get("evidence", ""), "status": args.get("status", "open")}
+    try:
+        return _ok(_remember("insight", data))
+    except Exception as e:  # noqa: BLE001
+        return _err("Memory unavailable: " + str(e))
+
+
 def handle_recall_memory(args, **kw):
     try:
         return _ok({"records": _recall(kind=args.get("kind"), limit=int(args.get("limit", 20)))})
@@ -153,7 +163,7 @@ def handle_recall_memory(args, **kw):
 # --- schemas ------------------------------------------------------------------
 GET_CONTEXT_SCHEMA = {
     "name": "get_company_context",
-    "description": "Pull the shared 'case file' for the current client: company profile + key facts + recent invoices + recent market signals the team has stored. Call this at the START of handling a request so you have the business context and know what the other agents have already found.",
+    "description": "Pull the shared 'case file' for the current client: company profile + key facts + recent invoices + recent market signals + the stored insights (the team's running picture of the business's gaps, risks, and product-market fit). Call this at the START of handling a request so you have the business context and know what the team already understands.",
     "parameters": {"type": "object", "properties": {}, "required": []},
 }
 REMEMBER_INVOICE_SCHEMA = {
@@ -195,13 +205,27 @@ REMEMBER_NOTE_SCHEMA = {
         "required": ["text"],
     },
 }
-RECALL_SCHEMA = {
-    "name": "recall_memory",
-    "description": "List records previously stored in shared memory. Optionally filter by kind ('invoice', 'signal', 'note'). Use to check what the team already knows before acting.",
+REMEMBER_INSIGHT_SCHEMA = {
+    "name": "remember_insight",
+    "description": "Store a durable judgment about the business into the case file (Advisor uses this): an identified gap, a risk, a product-market-fit observation, or advice given. This is the firm's growing understanding of the client — store conclusions, not raw data. When an earlier insight is fixed or disproven, store the follow-up with status 'resolved'.",
     "parameters": {
         "type": "object",
         "properties": {
-            "kind": {"type": "string", "description": "Optional filter: 'invoice', 'signal', or 'note'."},
+            "area": {"type": "string", "description": "Where it belongs: 'cash', 'receivables', 'sales', 'margins', 'market', 'product', 'compliance', 'risk', 'pmf', or similar."},
+            "insight": {"type": "string", "description": "The judgment in one or two lines, e.g. 'US is 62% of revenue and falling — dangerous concentration'."},
+            "evidence": {"type": "string", "description": "What it's based on, one phrase (the figures or research behind it)."},
+            "status": {"type": "string", "description": "'open' (default), 'watch', or 'resolved'."},
+        },
+        "required": ["area", "insight"],
+    },
+}
+RECALL_SCHEMA = {
+    "name": "recall_memory",
+    "description": "List records previously stored in shared memory. Optionally filter by kind ('invoice', 'signal', 'note', 'insight'). Use to check what the team already knows before acting.",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "kind": {"type": "string", "description": "Optional filter: 'invoice', 'signal', 'note', or 'insight'."},
             "limit": {"type": "integer", "description": "Max records (default 20)."},
         },
         "required": [],
@@ -213,6 +237,7 @@ _TOOLS = [
     ("remember_invoice", REMEMBER_INVOICE_SCHEMA, handle_remember_invoice, "🧾"),
     ("remember_signal", REMEMBER_SIGNAL_SCHEMA, handle_remember_signal, "📡"),
     ("remember_note", REMEMBER_NOTE_SCHEMA, handle_remember_note, "📝"),
+    ("remember_insight", REMEMBER_INSIGHT_SCHEMA, handle_remember_insight, "💡"),
     ("recall_memory", RECALL_SCHEMA, handle_recall_memory, "🔁"),
 ]
 
