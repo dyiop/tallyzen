@@ -1,0 +1,75 @@
+{
+  "company": {
+    "name": "Meenakshi Marine Exports",
+    "gstin": "33AABCM1234K1Z9",
+    "state": "Tamil Nadu",
+    "state_code": "33",
+    "city": "Thoothukudi",
+    "financial_year": "2026-2027",
+    "base_currency": "INR",
+    "profile": "Prawn exporter. Sells frozen prawns to the US, China, Vietnam and others. Exports are zero-rated under LUT (no output GST); accumulates input GST credit (refund position)."
+  },
+  "as_of_date": "2026-07-11",
+
+  "cash_and_bank": {
+    "Cash-in-Hand": 850000,
+    "HDFC Bank - EEFC": 12000000
+  },
+
+  "product_lines": [
+    {"line": "Vannamei Prawns", "revenue_6m": 29400000},
+    {"line": "Black Tiger Prawns", "revenue_6m": 12600000}
+  ],
+
+  "stock_items": [
+    {"item": "Vannamei Prawns HOSO", "line": "Vannamei Prawns", "qty_kg": 18000, "unit": "kg"},
+    {"item": "Black Tiger Prawns", "line": "Black Tiger Prawns", "qty_kg": 7200, "unit": "kg"}
+  ],
+
+  "sales_by_destination": {
+    "note": "Monthly export sales in INR by destination country. US is 62% of the 6-month total and falling sharply in Jun-Jul; China and Vietnam are rising.",
+    "months": ["2026-02", "2026-03", "2026-04", "2026-05", "2026-06", "2026-07"],
+    "USA":     [5500000, 5800000, 5200000, 4800000, 3000000, 1700000],
+    "China":   [ 800000,  900000, 1000000, 1100000, 1400000, 1500000],
+    "Vietnam": [ 700000,  700000,  800000,  800000, 1000000, 1000000],
+    "Others":  [ 600000,  700000,  700000,  700000,  800000,  800000]
+  },
+  "destination_totals_6m": {"USA": 26000000, "China": 6700000, "Vietnam": 5000000, "Others": 4300000},
+  "grand_total_6m": 42000000,
+
+  "receivables": [
+    {"customer": "Gulf Coast Seafood",    "country": "USA",     "bill_no": "EXP/2026/118", "amount": 3800000, "bill_date": "2026-05-02", "due_date": "2026-05-17", "days_overdue": 55},
+    {"customer": "Pacific Rim Foods",      "country": "USA",     "bill_no": "EXP/2026/140", "amount": 1200000, "bill_date": "2026-06-01", "due_date": "2026-06-16", "days_overdue": 25},
+    {"customer": "Shanghai Ocean Foods",   "country": "China",   "bill_no": "EXP/2026/151", "amount":  650000, "bill_date": "2026-07-01", "due_date": "2026-07-31", "days_overdue": 0},
+    {"customer": "Mekong Seafood Trading", "country": "Vietnam", "bill_no": "EXP/2026/153", "amount":  420000, "bill_date": "2026-07-02", "due_date": "2026-08-01", "days_overdue": 0}
+  ],
+
+  "gst_position": {
+    "month": "2026-07",
+    "output_tax": 0,
+    "input_tax_credit": 420000,
+    "net_payable": -420000,
+    "note": "Exporter under LUT: exports zero-rated, so output tax is nil. ₹4,20,000 of input credit is accumulating — a refund position, not a liability."
+  },
+
+  "vendors": [
+    {"name": "Coastal Packaging Pvt Ltd", "gstin": "33AAECC5678L1Z3", "state": "Tamil Nadu", "supplies": "Thermocol boxes, packaging"},
+    {"name": "Bay Ice & Cold Storage",    "gstin": "33AAFCB9012M1Z7", "state": "Tamil Nadu", "supplies": "Block ice, cold storage"}
+  ],
+
+  "flow1_sample_invoice": {
+    "note": "The invoice a judge uploads in Flow 1. Intra-state (Tamil Nadu) purchase → CGST + SGST. Vendor exists in Tally; GSTIN can be verified live via Linkup.",
+    "vendor": "Coastal Packaging Pvt Ltd",
+    "vendor_gstin": "33AAECC5678L1Z3",
+    "invoice_no": "CP/INV-2231",
+    "date": "2026-07-02",
+    "line_items": [{"desc": "Thermocol export boxes (5 kg)", "qty": 3000, "rate": 50, "amount": 150000}],
+    "taxable_value": 150000,
+    "cgst": 13500,
+    "sgst": 13500,
+    "total": 177000,
+    "expected_ledgers": {"debit": "Packing Material", "credit": "Coastal Packaging Pvt Ltd", "tax": ["Input CGST", "Input SGST"]}
+  },
+
+  "expense_ledgers": ["Freight & Logistics", "Cold Storage Charges", "Packing Material", "Salaries", "Bank Charges"]
+}
