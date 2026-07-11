@@ -1,0 +1,22 @@
+{
+  "companies": {
+    "meenakshi": {
+      "org": "meenakshi",
+      "name": "Meenakshi Marine Exports",
+      "sector": "Seafood export — frozen prawns (Vannamei, Black Tiger)",
+      "region": "Thoothukudi, Tamil Nadu, India",
+      "gstin": "33AABCM1234K1Z9",
+      "profile": "Family-run prawn exporter. Historically US-heavy (≈62% of sales). Exports zero-rated under LUT, so it runs a GST refund position. Owner makes fast, cash-aware decisions and wants plain-language guidance.",
+      "key_facts": [
+        "US is the largest market but softening — down ~30% over the last two months.",
+        "Top US buyer Gulf Coast Seafood owes ₹38L, 55 days overdue.",
+        "China and Vietnam are the growth markets the owner is weighing a pivot toward.",
+        "Registrations gate the pivot: selling to China needs GACC + MPEDA."
+      ],
+      "relationships": {
+        "ca": "Handles GST filing and export compliance — loop in for anything statutory.",
+        "cha": "Customs House Agent — handles export paperwork per destination."
+      }
+    }
+  }
+}

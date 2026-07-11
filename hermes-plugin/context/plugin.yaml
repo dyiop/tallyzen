@@ -1,0 +1,14 @@
+name: context
+version: 0.1.0
+description: "Shared business memory for the agents — the 'case file'. Agents read the company context and write typed records (invoices booked, market signals, notes) to a store shared across all three agents. Talks JSON to the memory connector (local store now, real Convex when CONVEX_URL is set). This is how the Advisor, Accountant and Analyst coordinate through memory."
+author: Tallyzen (Hermes Buildathon)
+kind: standalone
+platforms:
+  - macos
+  - linux
+provides_tools:
+  - get_company_context
+  - remember_invoice
+  - remember_signal
+  - remember_note
+  - recall_memory

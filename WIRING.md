@@ -133,12 +133,28 @@ Identity prompts live in `profiles/{advisor,analyst,accountant}.md`.
 
 ---
 
+## Shared memory — the "case file" (agents coordinate through it)
+The `context` plugin (`hermes-plugin/context/`) gives all three agents a shared store of
+**typed records** keyed by client org: `invoice` (Advisor writes after booking), `signal`
+(Analyst writes after research), `note`. `get_company_context` returns the profile + key
+facts + recent invoices + recent signals as one brief. This is how agents talk to each
+other through memory: the Analyst stores a signal, the Advisor pulls context next turn and
+sees it. Verified end-to-end.
+
+**No separate connector** — unlike Tally (which hides XML + a VM), Convex is a clean Python
+call, so the store logic lives *inside the plugin*: local JSON file by default
+(`~/.hermes/cache/tallyzen-memory/store.json`), real Convex when `CONVEX_URL` is set. We use
+**typed tools** (`remember_invoice`, not raw `convex_mutation`) so the schema lives in code,
+not in the model's head — fewer ways to fail live. Convex flip = `memory/convex/README.md`
+(one browser login you run yourself; earns the Convex power-up).
+
 ## Who owns what
 | Piece | Mechanism | Owner | Status |
 |---|---|---|---|
 | Accountant tools (Tally) | Plugin (`hermes-plugin/tally/`) | us | built, enabled, needs gateway restart |
 | Tally connector + seed | HTTP seam (`tally/`) | us | working (mock; real VM importing) |
 | Charts (Advisor's visuals) | Plugin (`hermes-plugin/charts/`) | us | built, enabled, needs gateway restart |
+| Shared memory (case file) | Plugin (`hermes-plugin/context/`) | us | built, enabled, local now; Convex flip ready |
 | Advisor profile + delegation | `delegate_task` + `profiles/advisor.md` | us | prompt done; needs restart + live test |
 | Analyst tools (Linkup) | MCP server (config) | teammate | server enabled; **toolset not exposed on telegram**; needs prompt |
 | Advisor↔Analyst decision flow | inherited `linkup` toolset | together | blocked on Linkup toolset exposure |
