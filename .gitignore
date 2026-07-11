@@ -4,3 +4,7 @@ memory/convex/node_modules/
 memory/convex/.env.local
 memory/convex/convex/_generated/
 memory/convex/.agents/
+memory/convex/.claude/
+memory/convex/skills-lock.json
+memory/convex/AGENTS.md
+memory/convex/CLAUDE.md
