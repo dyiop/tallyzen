@@ -155,6 +155,55 @@ the closed learning loop the buildathon is named for.
 
 ---
 
+## Live wiring status — Tally end-to-end is up (updated 2026-07-11)
+
+*Session log so a parallel conversation can sync. Everything below is DONE + verified unless
+marked ⏳/▢. The Accountant tool path (plugin → connector → real Tally) is live over Telegram.*
+
+### Runtime facts (as wired now)
+| Piece | Where | State |
+|---|---|---|
+| Real TallyPrime | Windows VM (Parallels) `10.211.55.3:9000` | ✅ Educational Mode · company **Meenakshi Marine Exports** · FY from 1-Apr-2026 · GST on (`33AABCM1234K1Z9`) · Tamil Nadu. Gateway = *Server / Port 9000* (F1 → Settings → Connectivity). |
+| Tally connector (the seam) | Mac `127.0.0.1:8800`, detached (launchd) | ✅ **HYBRID** — `TALLY_HTTP=http://10.211.55.3:9000` set ⇒ **reads = seed, writes = live Tally**. |
+| Hermes gateway | `hermes gateway run --replace` (detached) | ✅ reloaded — `tally` plugin enabled, **8 tools registered**, Telegram connected. |
+| Telegram bot | `@hermes_tvmu4hrhgqe27v43_bot` | ✅ allowed user Naman (`7377971048`). Default agent (`gpt-5.6-sol`) carries the `tally` toolset directly. |
+
+> ⚠️ The VM IP `10.211.55.3` is Parallels-assigned and can change on VM restart — re-check with `ipconfig`, then restart the connector with the new `TALLY_HTTP`.
+
+### Code changes this session (on `main`)
+- **`tally/tally_connector.py`** — implemented `_tally_post_voucher` (was `NotImplementedError`). Builds a `<VOUCHER>` Import envelope and POSTs to `TALLY_HTTP`. New helpers: `_esc`, `_educational_safe_date` (forces day → **02**, Educational-mode constraint), `_voucher_xml` (2-line: debit ledger + credit party, Tally sign convention), `_tally_import`, `_tag_int`/`_tag_text` (parse Tally's import receipt). **Reads unchanged → still seed** (the hybrid).
+- **`tally/import/generate_tally_xml.py`** — fixed a masters-import failure: stock items referenced base unit `kg` but no `<UNIT>` master existed (`Unit 'kg' does not exist!`). Added `_unit()` + emit UoM masters (from seed) **before** stock items; regenerated `masters.xml`/`vouchers.xml`.
+- **`demo/`** (commit `65d58ea`, pushed) — `coastal-packaging-invoice.png` (+ .html + README): the Flow-1 upload target, figures matching `seed_books.json → flow1_sample_invoice`.
+
+### Tally data reality (drives demo framing)
+- **Only Apr–Jul 2026 sales are in real Tally** (16 of 24 vouchers). Feb + Mar rejected — they predate the 1-Apr-2026 books (*date out of range*). The **seed has all 6 months**, and the agent reads the seed, so its answers stay complete (₹4.2 Cr 6-mo, etc.).
+- **`Export Sales - Others` = ₹0** in Tally (generator books the Others voucher against itself — a wash). USA/China/Vietnam are correct.
+- **No cash / GST / receivables-aging / stock-qty in Tally** — those live only in the seed; Balance Sheet / Stock Summary / GST reports are empty on the Tally screen.
+- **Net:** Tally = **on-screen backdrop**; the connector's seed = the **agent's brain**. Don't invite number-by-number reconciliation between the Tally screen and the agent's answers.
+
+### Verified end-to-end
+- `curl 127.0.0.1:8800/health` → `mode: real`, company correct.
+- POST a Purchase voucher through the connector → Tally accepted (`created:1, errors:0`); an independent gateway query confirms **Coastal Packaging Cr ₹1,77,000 / Packing Material Dr ₹1,77,000** (balanced). This is the exact path `tally_post_voucher` fires over Telegram.
+
+### Bring-it-back-up (if a process dies)
+```bash
+# connector (hybrid: live writes) — from tallyzen/
+TALLY_HTTP=http://<vm-ip>:9000 python3 tally/tally_connector.py     # nohup-detach for the demo
+# gateway (loads the tally plugin) — detached
+nohup env HERMES_ACCEPT_HOOKS=1 hermes gateway run --replace --accept-hooks </dev/null >~/.hermes/logs/gateway-manual.log 2>&1 &
+# sanity
+bash tally/verify.sh                 # 8 endpoints green
+hermes plugins list | grep tally     # enabled
+```
+
+### Open / next
+- ▢ **Booking robustness (top demo risk):** the party name the agent extracts must exactly match a Tally ledger (only `Coastal Packaging Pvt Ltd`, `Bay Ice & Cold Storage` exist). Recommended next hardening = fuzzy party-match + auto-create vendor ledger in the connector (~15 lines).
+- ▢ **Demo reset:** a test Purchase voucher was posted to Coastal Packaging — delete it via Day Book (`Alt+D`) so it starts at ₹0 for a clean before→after.
+- ⏳ **Profiles + delegation** (Advisor → Accountant/Analyst) still not built — the default Telegram agent carries the Tally tools directly for now (fine for testing; 3-profile setup is the next build, see WIRING.md).
+- ▢ Optional: live *reads* (thinner-data tradeoff — Apr–Jul only, Others ₹0).
+
+---
+
 ## References
 - Hermes docs — https://hermes-agent.nousresearch.com/docs/
 - Architecture guide — https://hermes-agent.nousresearch.com/docs/developer-guide/architecture
