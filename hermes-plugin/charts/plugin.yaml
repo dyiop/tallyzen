@@ -1,0 +1,11 @@
+name: charts
+version: 0.1.0
+description: "Render simple, clean chart images (bar + line) from numbers, for the Advisor to send the customer. Returns a PNG file path the agent embeds as MEDIA:<path> so the platform delivers it as a native image. Pure PIL, no matplotlib."
+author: Tallyzen (Hermes Buildathon)
+kind: standalone
+platforms:
+  - macos
+  - linux
+provides_tools:
+  - chart_bar
+  - chart_line

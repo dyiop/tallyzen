@@ -96,20 +96,40 @@ is set in `~/.hermes/.env`.
 
 ---
 
-## The agents themselves — profiles + delegation (next step, NOT done yet)
+## The Advisor + how delegation ACTUALLY works (read this — it's not obvious)
 
-Each of our three "agents" is a **Hermes profile** = `model + toolset access + identity
-prompt`. Identity prompts drafted in `profiles/{advisor,analyst,accountant}.md`.
+The Advisor is the **gateway-facing agent** — the one the owner messages on Telegram. It
+orchestrates the other two and does all the presentation. Two facts from the Hermes source
+that shape everything:
 
-- **Accountant** profile → toolset `tally` (+ its prompt). Reads/writes the books.
-- **Analyst** profile → the Linkup MCP tools (+ its prompt). Researches the world.
-- **Advisor** profile → the **`delegation`** toolset (already enabled on telegram ✅). It's
-  the orchestrator: the owner messages the Advisor, which delegates to the other two and
-  synthesizes. Delegation is **serial** in the documented API — delegate to Accountant, get
-  the result, then Analyst; don't assume parallel.
+**1. Delegated children INHERIT the Advisor's toolsets — the model can't pick them.**
+There is no "Accountant profile" that delegation targets by name. The Advisor calls the
+`delegate_task` tool with a `goal`, `context`, and a `role` label ("Accountant"/"Analyst").
+The spawned child **inherits whatever toolsets the Advisor has**, and the role+goal steer how
+it behaves. Consequence: **the Advisor (the Telegram agent) must itself hold every toolset any
+specialist needs** →  `delegation` + `tally` + `charts` + the **Linkup** MCP toolset.
+Delegation is **serial** — delegate to the Accountant, get the result, then the Analyst.
 
-Turning the three markdown prompts into live Hermes profiles + wiring delegation is the piece
-we do **together next**, after the Accountant is confirmed live over Telegram.
+**2. Presentation is the Advisor's OWN job, not delegated.** It gathers raw numbers via the
+specialists, then builds the answer itself:
+- **Charts** — the `charts` plugin (`chart_bar`, `chart_line`) renders a PNG and returns a
+  **`MEDIA:<path>`** string.
+- **Sending images** — the platform delivers any `MEDIA:<path>` the agent puts in its reply
+  as a native image (same convention TTS/screenshots use). One `MEDIA:` line per message =
+  one image message. The Advisor sends each chart as its own message + a 1–2 line explainer.
+
+Identity prompts live in `profiles/{advisor,analyst,accountant}.md`.
+
+### Wiring checklist for the Advisor (Telegram agent)
+- `delegation` toolset on telegram — ✅ already on.
+- `tally` toolset — ✅ enabled + exposed.
+- `charts` toolset — ✅ enabled + exposed (this piece).
+- **`linkup` MCP toolset exposed on telegram — ⚠️ NOT yet.** Linkup is enabled as an MCP
+  *server*, but its toolset must be reachable by the Telegram agent so a delegated Analyst
+  child inherits it. **Teammate's dependency** — until then the Analyst half of a decision
+  can't research. (`inherit_mcp_toolsets` defaults true, so once the parent has it, children
+  get it.)
+- Gateway restart to load `charts` + pick up the profiles.
 
 ---
 
@@ -118,8 +138,10 @@ we do **together next**, after the Accountant is confirmed live over Telegram.
 |---|---|---|---|
 | Accountant tools (Tally) | Plugin (`hermes-plugin/tally/`) | us | built, enabled, needs gateway restart |
 | Tally connector + seed | HTTP seam (`tally/`) | us | working (mock; real VM importing) |
-| Analyst tools (Linkup) | MCP server (config) | teammate | wired; needs prompt/profile |
-| Advisor orchestration | `delegation` toolset + profiles | together | next |
+| Charts (Advisor's visuals) | Plugin (`hermes-plugin/charts/`) | us | built, enabled, needs gateway restart |
+| Advisor profile + delegation | `delegate_task` + `profiles/advisor.md` | us | prompt done; needs restart + live test |
+| Analyst tools (Linkup) | MCP server (config) | teammate | server enabled; **toolset not exposed on telegram**; needs prompt |
+| Advisor↔Analyst decision flow | inherited `linkup` toolset | together | blocked on Linkup toolset exposure |
 
 ## Verify the Accountant end (anytime)
 ```bash
