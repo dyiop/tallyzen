@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tallyzen — An AI Financial Services Firm</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    color: #182b23; background: #f4eede; line-height: 1.55; -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 940px; margin: 0 auto; padding: 0 28px; }
+  .serif { font-family: Georgia, "Iowan Old Style", "Times New Roman", serif; }
+  .mono { font-family: ui-monospace, "SF Mono", Menlo, monospace; }
+
+  .band-dark { background: #143a2c; color: #ece6d6; }
+  .band-paper { background: #f4eede; color: #182b23; }
+  .band-paper-alt { background: #efe7d3; color: #182b23; }
+  .band-sea { background: #0f2f3d; color: #e6eef0; }
+  section { padding: 64px 0; }
+
+  .eyebrow { font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: #d8a13e; font-weight: 700; }
+  .hero h1 { font-size: 78px; line-height: 0.95; color: #f6efdd; margin: 18px 0 8px; letter-spacing: -1px; }
+  .hero .tag { font-size: 25px; color: #bfe3cf; font-style: italic; }
+  .hero p.lead { margin-top: 22px; font-size: 17px; color: #d7d0bd; max-width: 660px; }
+  .metarow { margin-top: 30px; display: flex; flex-wrap: wrap; gap: 10px; }
+  .chip { font-size: 12px; letter-spacing: 0.4px; padding: 7px 13px; border: 1px solid #3c6553; border-radius: 999px; color: #cfe6d8; }
+
+  .kicker { font-size: 12px; letter-spacing: 2.5px; text-transform: uppercase; font-weight: 700; color: #1f7a55; }
+  .kicker.on-dark { color: #d8a13e; }
+  .kicker.on-sea { color: #63c0c9; }
+  h2.sec { font-size: 40px; line-height: 1.05; margin: 12px 0 8px; letter-spacing: -0.5px; color: #143a2c; }
+  h2.sec.on-dark { color: #f4eede; }
+  h2.sec.on-sea { color: #eaf3f4; }
+  .sub { font-size: 17px; color: #4c5b52; max-width: 680px; }
+  .sub.on-dark { color: #c3ccbe; }
+  .sub.on-sea { color: #a9c4cb; }
+
+  /* priorities */
+  .prio { margin-top: 30px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .pcard { background: #143a2c; color: #ece6d6; border-radius: 14px; padding: 24px; border-top: 4px solid #d8a13e; }
+  .pcard .pn { font-family: Georgia, serif; font-size: 30px; color: #d8a13e; }
+  .pcard h3 { font-size: 18px; margin: 6px 0 8px; color: #f4eede; }
+  .pcard p { font-size: 14px; color: #b9c4b6; }
+
+  /* legend */
+  .legend { margin-top: 26px; display: flex; flex-wrap: wrap; gap: 18px; font-size: 13.5px; color: #4c5b52; }
+  .legend span { display: inline-flex; align-items: center; gap: 8px; }
+  .dot { width: 13px; height: 13px; border-radius: 50%; display: inline-block; }
+
+  .svgwrap { margin-top: 30px; }
+  svg { width: 100%; height: auto; display: block; }
+
+  /* agent cards */
+  .agents { margin-top: 24px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .agent { background: #fffdf7; border: 1px solid #e2d8c1; border-radius: 14px; padding: 22px; border-top: 4px solid #999; }
+  .agent.advisor { border-top-color: #d8a13e; }
+  .agent.analyst { border-top-color: #1f6f8b; }
+  .agent.accountant { border-top-color: #1f7a55; }
+  .agent .role { font-size: 11.5px; letter-spacing: 1.4px; text-transform: uppercase; font-weight: 700; color: #8a7a52; }
+  .agent.advisor .role { color: #b07d16; }
+  .agent.analyst .role { color: #1f6f8b; }
+  .agent.accountant .role { color: #1f7a55; }
+  .agent h3 { font-size: 21px; margin: 6px 0 8px; color: #143a2c; }
+  .agent p { font-size: 14px; color: #4c5b52; }
+  .agent .tool { margin-top: 12px; font-size: 12px; color: #55645a; }
+  .agent .tool b { color: #33433a; }
+
+  /* flows */
+  .flow { margin-top: 28px; border-left: 2px solid #cdbf9f; padding-left: 26px; display: flex; flex-direction: column; gap: 18px; }
+  .flow.on-sea { border-left-color: #2a5866; }
+  .step { position: relative; }
+  .step .sh { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .step .sn { font-family: Georgia, serif; font-size: 15px; font-weight: bold; color: #d8a13e; }
+  .step .who { font-size: 15px; font-weight: 700; }
+  .who.advisor { color: #b07d16; } .who.analyst { color: #1f6f8b; } .who.accountant { color: #1f7a55; }
+  .who.on-sea.advisor { color: #e6b85c; } .who.on-sea.analyst { color: #63c0c9; } .who.on-sea.accountant { color: #6fc79f; }
+  .step p { margin-top: 3px; font-size: 15px; color: #3a4a3f; }
+  .step.on-sea p { color: #bcd2d7; }
+  .tags { margin-top: 7px; display: flex; flex-wrap: wrap; gap: 6px; }
+  .tag { font-size: 11.5px; padding: 3px 9px; border-radius: 999px; border: 1px solid #cdbf9f; background: #fbf6e8; color: #5a5030; }
+  .tag.on-sea { border-color: #2a5866; background: #143b48; color: #9fc7cf; }
+
+  /* persona */
+  .persona { margin-top: 26px; background: #143b48; border: 1px solid #2a5866; border-radius: 14px; padding: 22px 24px; }
+  .persona .pk { font-size: 11.5px; letter-spacing: 1.5px; text-transform: uppercase; color: #63c0c9; font-weight: 700; }
+  .persona h3 { font-size: 22px; color: #eaf3f4; margin: 6px 0 6px; }
+  .persona .q { margin-top: 10px; font-size: 17px; font-style: italic; color: #cfe6ea; border-left: 3px solid #d8a13e; padding-left: 14px; }
+  .outcome { margin-top: 22px; background: #0b2530; border: 1px solid #2a5866; border-radius: 12px; padding: 18px 22px; }
+  .outcome .ok { font-size: 11.5px; letter-spacing: 1.5px; text-transform: uppercase; color: #d8a13e; font-weight: 700; }
+  .outcome p { margin-top: 6px; font-size: 16px; color: #dce9ec; }
+
+  /* callout */
+  .callout { margin-top: 30px; border-left: 4px solid #d8a13e; background: #fbf6e8; padding: 20px 24px; border-radius: 0 12px 12px 0; }
+  .callout .ct { font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: #b07d16; font-weight: 700; }
+  .callout p { margin-top: 7px; font-size: 15.5px; color: #2c3a30; }
+
+  /* tools grid */
+  .tools { margin-top: 28px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .trow { display: grid; grid-template-columns: 130px 1fr; gap: 14px; background: #fffdf7; border: 1px solid #e2d8c1; border-radius: 10px; padding: 14px 16px; }
+  .trow .tn { font-weight: 700; color: #143a2c; font-size: 14.5px; }
+  .trow .td { font-size: 13.5px; color: #55645a; }
+
+  /* stats */
+  .tiles { margin-top: 26px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .tile { background: #fffdf7; border: 1px solid #e2d8c1; border-radius: 12px; padding: 20px; }
+  .tile .num { font-size: 34px; font-weight: 800; color: #1f7a55; letter-spacing: -1px; }
+  .tile .lab { font-size: 13px; color: #55645a; margin-top: 4px; }
+
+  .footer { padding: 40px 0 60px; font-size: 13px; color: #8a9187; text-align: center; }
+  .footer b { color: #4c5b52; }
+
+  @media (max-width: 760px) {
+    .hero h1 { font-size: 52px; }
+    .prio, .agents, .tools, .tiles { grid-template-columns: 1fr; }
+    h2.sec { font-size: 30px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="band-dark hero">
+  <div class="wrap">
+    <div class="eyebrow">Hermes Buildathon · Track 03 · AI as Agency</div>
+    <h1 class="serif">Tallyzen</h1>
+    <div class="tag serif">A financial services firm, run by agents.</div>
+    <p class="lead">Three agents that work like a real finance team — a <b>Financial Advisor</b> who talks to the owner, a <b>Financial Analyst</b> who researches the outside world, and an <b>Accountant</b> who reads the books in TallyPrime. They coordinate to do the work <i>and</i> to answer the hard questions. Built on Hermes.</p>
+    <div class="metarow">
+      <span class="chip">8-hour live build</span>
+      <span class="chip">India SMB · Tally</span>
+      <span class="chip">Two end-to-end flows</span>
+      <span class="chip">Base harness: Hermes</span>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT WE'RE JUDGED ON -->
+<section class="band-paper">
+  <div class="wrap">
+    <div class="kicker">What we're judged on</div>
+    <h2 class="sec serif">Three things a mentor told us to prioritize</h2>
+    <p class="sub">This is the effective rubric. Every design choice below serves one of these — nothing else.</p>
+    <div class="prio">
+      <div class="pcard"><div class="pn serif">1</div><h3>An end-to-end workflow</h3><p>A complete job, from the owner's request all the way to a real outcome — not a menu of features.</p></div>
+      <div class="pcard"><div class="pn serif">2</div><h3>Agents coordinating</h3><p>Multiple agents visibly handing off and combining their work toward one outcome.</p></div>
+      <div class="pcard"><div class="pn serif">3</div><h3>Tools in action</h3><p>The partner tools we identified doing real work inside the flow, not bolted on.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- THE FIRM -->
+<section class="band-dark">
+  <div class="wrap">
+    <div class="kicker on-dark">The firm</div>
+    <h2 class="sec on-dark serif">Three agents, one team</h2>
+    <p class="sub on-dark">The Advisor is the face and the orchestrator. It never answers alone — it spawns the Analyst (the outside world) and the Accountant (the books), then synthesizes.</p>
+
+    <div class="legend">
+      <span><i class="dot" style="background:#d8a13e;"></i> Advisor · synthesis</span>
+      <span><i class="dot" style="background:#1f6f8b;"></i> Analyst · outward (market, regulatory)</span>
+      <span><i class="dot" style="background:#1f7a55;"></i> Accountant · inward (the books)</span>
+    </div>
+
+    <div class="svgwrap">
+      <svg viewBox="0 0 920 430" role="img" aria-label="The three-agent financial firm">
+        <defs>
+          <marker id="arw" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L6,3 L0,6 Z" fill="#7fb79b"></path>
+          </marker>
+        </defs>
+        <!-- owner -->
+        <rect x="350" y="8" width="220" height="44" rx="22" fill="#0e2c21" stroke="#3c6553"></rect>
+        <text x="460" y="35" text-anchor="middle" fill="#cfe6d8" font-family="Georgia, serif" font-size="16">Business owner · WhatsApp / voice</text>
+        <line x1="460" y1="52" x2="460" y2="80" stroke="#7fb79b" stroke-width="2" marker-end="url(#arw)"></line>
+        <!-- advisor -->
+        <rect x="320" y="84" width="280" height="62" rx="12" fill="#d8a13e"></rect>
+        <text x="460" y="112" text-anchor="middle" fill="#1a2b16" font-family="Georgia, serif" font-size="19" font-weight="bold">Financial Advisor</text>
+        <text x="460" y="132" text-anchor="middle" fill="#3a2f12" font-size="12">the face · plans · delegates · synthesizes</text>
+        <!-- memory -->
+        <rect x="662" y="90" width="230" height="50" rx="10" fill="#0e2c21" stroke="#3c6553"></rect>
+        <text x="777" y="111" text-anchor="middle" fill="#bfe3cf" font-size="13" font-weight="bold">Shared memory · Convex</text>
+        <text x="777" y="128" text-anchor="middle" fill="#8fb8a3" font-size="11">the case file</text>
+        <line x1="600" y1="115" x2="662" y2="115" stroke="#3c6553" stroke-width="1.5" stroke-dasharray="4 3"></line>
+        <!-- voice back -->
+        <line x1="330" y1="100" x2="250" y2="60" stroke="#6b5a2f" stroke-width="1.5" stroke-dasharray="5 4"></line>
+        <text x="196" y="52" text-anchor="middle" fill="#e0c583" font-size="11">ElevenLabs voice ↑</text>
+        <!-- branch -->
+        <line x1="460" y1="146" x2="460" y2="168" stroke="#7fb79b" stroke-width="2"></line>
+        <line x1="215" y1="168" x2="705" y2="168" stroke="#7fb79b" stroke-width="2"></line>
+        <line x1="215" y1="168" x2="215" y2="196" stroke="#1f6f8b" stroke-width="2.5" marker-end="url(#arw)"></line>
+        <line x1="705" y1="168" x2="705" y2="196" stroke="#1f7a55" stroke-width="2.5" marker-end="url(#arw)"></line>
+        <!-- analyst -->
+        <rect x="70" y="200" width="290" height="86" rx="12" fill="#173e4d" stroke="#2f7088"></rect>
+        <text x="215" y="228" text-anchor="middle" fill="#eaf3f4" font-family="Georgia, serif" font-size="17" font-weight="bold">Financial Analyst</text>
+        <text x="215" y="249" text-anchor="middle" fill="#a9d4de" font-size="12">market · regulatory · competitors</text>
+        <rect x="150" y="258" width="130" height="20" rx="10" fill="#1f6f8b"></rect>
+        <text x="215" y="272" text-anchor="middle" fill="#eaf3f4" font-size="11" font-weight="bold">tool: Linkup</text>
+        <!-- accountant -->
+        <rect x="560" y="200" width="290" height="86" rx="12" fill="#154034" stroke="#2f6b52"></rect>
+        <text x="705" y="228" text-anchor="middle" fill="#eafaef" font-family="Georgia, serif" font-size="17" font-weight="bold">Accountant</text>
+        <text x="705" y="249" text-anchor="middle" fill="#a9dcc2" font-size="12">the books · current situation</text>
+        <rect x="628" y="258" width="154" height="20" rx="10" fill="#1f7a55"></rect>
+        <text x="705" y="272" text-anchor="middle" fill="#eafaef" font-size="11" font-weight="bold">tool: TallyPrime :9000</text>
+        <!-- endpoints -->
+        <line x1="215" y1="286" x2="215" y2="330" stroke="#2f7088" stroke-width="1.5" marker-end="url(#arw)"></line>
+        <rect x="120" y="334" width="190" height="40" rx="10" fill="#0b2530" stroke="#2a5866"></rect>
+        <text x="215" y="359" text-anchor="middle" fill="#9fc7cf" font-size="12.5">Live web · rates, markets</text>
+        <line x1="705" y1="286" x2="705" y2="330" stroke="#2f6b52" stroke-width="1.5" marker-end="url(#arw)"></line>
+        <rect x="610" y="334" width="190" height="40" rx="10" fill="#0e2c21" stroke="#3c6553"></rect>
+        <text x="705" y="359" text-anchor="middle" fill="#bfe3cf" font-size="12.5">Tally books · vouchers, sales</text>
+        <!-- escalation -->
+        <line x1="705" y1="374" x2="705" y2="396" stroke="#6b5a2f" stroke-width="1.5" stroke-dasharray="5 4"></line>
+        <rect x="600" y="398" width="210" height="30" rx="8" fill="#2a2413" stroke="#6b5a2f"></rect>
+        <text x="705" y="418" text-anchor="middle" fill="#e0c583" font-size="12" font-weight="bold">Escalate → your CA (statutory)</text>
+      </svg>
+    </div>
+
+    <div class="agents">
+      <div class="agent advisor">
+        <div class="role">The face + orchestrator</div>
+        <h3 class="serif">Financial Advisor</h3>
+        <p>Talks to the owner, frames the question, delegates to the Analyst and Accountant, fuses their inputs into one recommendation, and delivers it.</p>
+        <div class="tool"><b>Tools:</b> Hermes · ElevenLabs · Wispr Flow</div>
+      </div>
+      <div class="agent analyst">
+        <div class="role">The outward eye</div>
+        <h3 class="serif">Financial Analyst</h3>
+        <p>Researches the outside world — demand, prices, interest rates, regulatory conditions, competitors — and reports what it means for the decision.</p>
+        <div class="tool"><b>Tool:</b> Linkup (live web research)</div>
+      </div>
+      <div class="agent accountant">
+        <div class="role">The inward eye</div>
+        <h3 class="serif">Accountant</h3>
+        <p>Speaks with TallyPrime. Pulls the current reality — sales history, cash, receivables, payables — and posts new entries. Keeps a check on the situation.</p>
+        <div class="tool"><b>Tool:</b> TallyPrime XML :9000</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FLOW 1 -->
+<section class="band-paper">
+  <div class="wrap">
+    <div class="kicker">Flow 1 · the opener</div>
+    <h2 class="sec serif">Upload an invoice → it lands in Tally</h2>
+    <p class="sub">The #1 ask across a year of waitlist (40% of signups). Proves the plumbing — and it's a coordinated chain, not one agent.</p>
+    <div class="flow">
+      <div class="step"><div class="sh"><span class="sn">01</span><span class="who advisor">Advisor</span></div><p>Receives the invoice photo/PDF on WhatsApp or Telegram, opens a job, delegates.</p><div class="tags"><span class="tag">Wispr Flow</span><span class="tag">Hermes</span></div></div>
+      <div class="step"><div class="sh"><span class="sn">02</span><span class="who accountant">Extraction agent · vision</span></div><p>Reads the image → structured fields: vendor, GSTIN, date, line items, taxable value, CGST/SGST/IGST, total.</p><div class="tags"><span class="tag">GPT-5.5 vision</span></div></div>
+      <div class="step"><div class="sh"><span class="sn">03</span><span class="who analyst">Validation &amp; Enrichment agent</span></div><p>Checks the tax math and whether the vendor exists as a ledger. Unknown vendor or missing GSTIN → verifies it live via Linkup. Flags anything unresolved.</p><div class="tags"><span class="tag">Linkup</span></div></div>
+      <div class="step"><div class="sh"><span class="sn">04</span><span class="who accountant">Booking agent</span></div><p>Maps to the correct ledgers, builds the voucher, posts to Tally on confirm, returns the voucher number.</p><div class="tags"><span class="tag">TallyPrime :9000</span><span class="tag">Convex audit trail</span></div></div>
+      <div class="step"><div class="sh"><span class="sn">05</span><span class="who advisor">Advisor</span></div><p>"Booked INV-2231 from Bajaj Steel — ₹1,50,000 (₹1,27,119 + ₹22,881 GST) as Purchase voucher V-104. Vendor GSTIN verified via Linkup."</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FLOW 2 (showpiece) -->
+<section class="band-sea">
+  <div class="wrap">
+    <div class="kicker on-sea">Flow 2 · the showpiece</div>
+    <h2 class="sec on-sea serif">A seafood trader decides where to sell next</h2>
+    <p class="sub on-sea">The Advisor can't answer this alone. It needs the books (Accountant) and the market (Analyst) at once — which is exactly what makes the coordination real.</p>
+
+    <div class="persona">
+      <div class="pk">The persona</div>
+      <h3 class="serif">Meenakshi Marine Exports · Thoothukudi, Tamil Nadu · prawn exporter</h3>
+      <div class="q">"With the US–Iran war, my US orders are drying up. Look at my last six months of prawn sales and tell me — should I shift to China, Vietnam and Southeast Asia?"</div>
+    </div>
+
+    <div class="flow on-sea">
+      <div class="step on-sea"><div class="sh"><span class="sn">01</span><span class="who on-sea advisor">Advisor</span></div><p>Frames the decision, states the plan, spawns two requests in parallel.</p><div class="tags"><span class="tag on-sea">Wispr Flow</span><span class="tag on-sea">Hermes</span></div></div>
+      <div class="step on-sea"><div class="sh"><span class="sn">02</span><span class="who on-sea accountant">Accountant → Tally</span></div><p>Pulls 6 months of prawn sales by destination + customer: "₹4.2 Cr total — 62% to the US, and US is down 30% over the last two months. Top US buyer Gulf Coast Seafood owes ₹38 L, 55 days overdue. China 16%, Vietnam 12%."</p><div class="tags"><span class="tag on-sea">TallyPrime :9000</span></div></div>
+      <div class="step on-sea"><div class="sh"><span class="sn">03</span><span class="who on-sea analyst">Analyst → Linkup</span></div><p>Researches the outside world: "China vannamei demand is strong; Vietnam is a re-processing hub for Indian raw material; the US carries anti-dumping duties on Indian shrimp and freight/insurance is spiking. Selling to China needs GACC + MPEDA registration (~weeks)."</p><div class="tags"><span class="tag on-sea">Linkup</span></div></div>
+      <div class="step on-sea"><div class="sh"><span class="sn">04</span><span class="who on-sea advisor">Advisor synthesizes → voice</span></div><p>Fuses internal + external into one recommendation, spoken back to the owner.</p><div class="tags"><span class="tag on-sea">ElevenLabs</span><span class="tag on-sea">Convex</span></div></div>
+    </div>
+
+    <div class="outcome">
+      <div class="ok">The outcome</div>
+      <p>"Your books already confirm the US is softening and ₹38 L is stuck there. The market backs the pivot: prioritize China — but start the GACC/MPEDA registration now, it's the long pole. Keep Vietnam as a re-processing channel, hold a small US allocation for paying buyers only, and collect that ₹38 L before extending more US credit. Loop your CHA in on the China paperwork."</p>
+    </div>
+
+    <div class="callout" style="background:#0b2530; border-left-color:#63c0c9;">
+      <div class="ct" style="color:#63c0c9;">Grounded, not hallucinated</div>
+      <p style="color:#cfe6ea;">Indian shrimp leaning on the US — and the live debate about diversifying to China and Southeast Asia — is a <b>real industry story</b>. Point Linkup at the real destination-market and regulatory data; let the "US–Iran war" be the narrative shock that starts the question. The Analyst returns facts a judge can verify.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TOOLS -->
+<section class="band-paper-alt">
+  <div class="wrap">
+    <div class="kicker">Priority 3 · tools in action</div>
+    <h2 class="sec serif">Every tool has a real job</h2>
+    <div class="tools">
+      <div class="trow"><div class="tn">Hermes</div><div class="td">Base harness — all three agents run on it and accrete reusable skills.</div></div>
+      <div class="trow"><div class="tn">TallyPrime :9000</div><div class="td">Accountant posts vouchers (F1) and reads sales &amp; receivables (F2).</div></div>
+      <div class="trow"><div class="tn">Linkup</div><div class="td">GSTIN/vendor lookup (F1) · market &amp; regulatory research (F2).</div></div>
+      <div class="trow"><div class="tn">GPT-5.5 vision</div><div class="td">Extraction agent reads the invoice image into structured fields (F1).</div></div>
+      <div class="trow"><div class="tn">ElevenLabs</div><div class="td">Advisor delivers the recommendation as speech (F2).</div></div>
+      <div class="trow"><div class="tn">Wispr Flow</div><div class="td">Owner asks by voice — dictation into the Advisor.</div></div>
+      <div class="trow"><div class="tn">Convex</div><div class="td">Shared "case file" memory across agents and turns.</div></div>
+      <div class="trow"><div class="tn">Cloudflare</div><div class="td">Hosts the webhook / agent surface on a live URL.</div></div>
+    </div>
+    <p class="sub" style="margin-top:18px; font-size:14px;">Dodo Payments doesn't fit an advisory flow cleanly — include it only as an "activate your plan" checkout, or leave it out. A natural tool story beats a forced one.</p>
+  </div>
+</section>
+
+<!-- GROUNDING + BUILD -->
+<section class="band-paper">
+  <div class="wrap">
+    <div class="kicker">Grounding &amp; build discipline</div>
+    <h2 class="sec serif">Real demand behind it, one happy path to build</h2>
+    <div class="tiles">
+      <div class="tile"><div class="num">40%</div><div class="lab">of a year of waitlist asked for invoice → Tally. That's Flow 1.</div></div>
+      <div class="tile"><div class="num">80%</div><div class="lab">of signups are ₹50 Lakh ARR and up — established SMBs, India-first.</div></div>
+      <div class="tile"><div class="num">67%</div><div class="lab">said yes to a founder call — 20 high-intent businesses to validate with.</div></div>
+    </div>
+    <div class="callout">
+      <div class="ct">Build discipline</div>
+      <p>Bound the Analyst's research to 2–3 concrete Linkup queries. Rehearse <b>one</b> happy path per flow. Make every handoff visible — each agent posts its own line so the judge <i>sees</i> the coordination. Flow 2 (advisory) is the demo showpiece; note it reaches beyond the bookkeeping the waitlist asked for.</p>
+    </div>
+  </div>
+</section>
+
+<div class="footer band-paper">
+  <div class="wrap">
+    <b>Tallyzen</b> — a financial services firm, run by agents. · Hermes Buildathon, Track 03 · Advisor + Analyst + Accountant, on Hermes.
+  </div>
+</div>
+
+</body>
+</html>
