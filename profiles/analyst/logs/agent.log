@@ -1,0 +1,378 @@
+2026-07-11 20:48:18,092 INFO hermes_cli.plugins: Plugin 'browser-browser-use' registered browser provider: browser-use
+2026-07-11 20:48:18,093 INFO hermes_cli.plugins: Plugin 'browser-browserbase' registered browser provider: browserbase
+2026-07-11 20:48:18,094 INFO hermes_cli.plugins: Plugin 'browser-firecrawl' registered browser provider: firecrawl
+2026-07-11 20:48:18,270 INFO hermes_cli.plugins: Plugin 'fal' registered image_gen provider: fal
+2026-07-11 20:48:18,273 INFO hermes_cli.plugins: Plugin 'krea' registered image_gen provider: krea
+2026-07-11 20:48:18,274 INFO hermes_cli.plugins: Plugin 'openai' registered image_gen provider: openai
+2026-07-11 20:48:18,277 INFO hermes_cli.plugins: Plugin 'openai-codex' registered image_gen provider: openai-codex
+2026-07-11 20:48:18,279 INFO hermes_cli.plugins: Plugin 'openrouter' registered image_gen provider: openrouter
+2026-07-11 20:48:18,279 INFO hermes_cli.plugins: Plugin 'openrouter' registered image_gen provider: nous
+2026-07-11 20:48:18,282 INFO hermes_cli.plugins: Plugin 'xai' registered image_gen provider: xai
+2026-07-11 20:48:18,359 INFO hermes_cli.plugins: Plugin 'fal' registered video_gen provider: fal
+2026-07-11 20:48:18,362 INFO hermes_cli.plugins: Plugin 'xai' registered video_gen provider: xai
+2026-07-11 20:48:18,364 INFO hermes_cli.plugins: Plugin 'web-brave-free' registered web provider: brave-free
+2026-07-11 20:48:18,365 INFO hermes_cli.plugins: Plugin 'web-ddgs' registered web provider: ddgs
+2026-07-11 20:48:18,366 INFO hermes_cli.plugins: Plugin 'web-exa' registered web provider: exa
+2026-07-11 20:48:18,370 INFO hermes_cli.plugins: Plugin 'web-firecrawl' registered web provider: firecrawl
+2026-07-11 20:48:18,371 INFO hermes_cli.plugins: Plugin 'web-parallel' registered web provider: parallel
+2026-07-11 20:48:18,372 INFO hermes_cli.plugins: Plugin 'web-searxng' registered web provider: searxng
+2026-07-11 20:48:18,373 INFO hermes_cli.plugins: Plugin 'web-tavily' registered web provider: tavily
+2026-07-11 20:48:18,375 INFO hermes_cli.plugins: Plugin 'web-xai' registered web provider: xai
+2026-07-11 20:48:18,405 INFO hermes_cli.plugins: Plugin discovery complete: 51 found, 44 enabled
+2026-07-11 20:48:20,519 INFO hermes_cli.plugins: Plugin 'browser-browser-use' registered browser provider: browser-use
+2026-07-11 20:48:20,521 INFO hermes_cli.plugins: Plugin 'browser-browserbase' registered browser provider: browserbase
+2026-07-11 20:48:20,521 INFO hermes_cli.plugins: Plugin 'browser-firecrawl' registered browser provider: firecrawl
+2026-07-11 20:48:20,689 INFO hermes_cli.plugins: Plugin 'fal' registered image_gen provider: fal
+2026-07-11 20:48:20,692 INFO hermes_cli.plugins: Plugin 'krea' registered image_gen provider: krea
+2026-07-11 20:48:20,693 INFO hermes_cli.plugins: Plugin 'openai' registered image_gen provider: openai
+2026-07-11 20:48:20,695 INFO hermes_cli.plugins: Plugin 'openai-codex' registered image_gen provider: openai-codex
+2026-07-11 20:48:20,698 INFO hermes_cli.plugins: Plugin 'openrouter' registered image_gen provider: openrouter
+2026-07-11 20:48:20,698 INFO hermes_cli.plugins: Plugin 'openrouter' registered image_gen provider: nous
+2026-07-11 20:48:20,700 INFO hermes_cli.plugins: Plugin 'xai' registered image_gen provider: xai
+2026-07-11 20:48:20,777 INFO hermes_cli.plugins: Plugin 'fal' registered video_gen provider: fal
+2026-07-11 20:48:20,780 INFO hermes_cli.plugins: Plugin 'xai' registered video_gen provider: xai
+2026-07-11 20:48:20,782 INFO hermes_cli.plugins: Plugin 'web-brave-free' registered web provider: brave-free
+2026-07-11 20:48:20,782 INFO hermes_cli.plugins: Plugin 'web-ddgs' registered web provider: ddgs
+2026-07-11 20:48:20,783 INFO hermes_cli.plugins: Plugin 'web-exa' registered web provider: exa
+2026-07-11 20:48:20,787 INFO hermes_cli.plugins: Plugin 'web-firecrawl' registered web provider: firecrawl
+2026-07-11 20:48:20,789 INFO hermes_cli.plugins: Plugin 'web-parallel' registered web provider: parallel
+2026-07-11 20:48:20,789 INFO hermes_cli.plugins: Plugin 'web-searxng' registered web provider: searxng
+2026-07-11 20:48:20,790 INFO hermes_cli.plugins: Plugin 'web-tavily' registered web provider: tavily
+2026-07-11 20:48:20,792 INFO hermes_cli.plugins: Plugin 'web-xai' registered web provider: xai
+2026-07-11 20:48:20,822 INFO hermes_cli.plugins: Plugin discovery complete: 51 found, 44 enabled
+2026-07-11 21:05:06,172 INFO hermes_cli.plugins: Plugin 'browser-browser-use' registered browser provider: browser-use
+2026-07-11 21:05:06,174 INFO hermes_cli.plugins: Plugin 'browser-browserbase' registered browser provider: browserbase
+2026-07-11 21:05:06,174 INFO hermes_cli.plugins: Plugin 'browser-firecrawl' registered browser provider: firecrawl
+2026-07-11 21:05:06,358 INFO hermes_cli.plugins: Plugin 'fal' registered image_gen provider: fal
+2026-07-11 21:05:06,360 INFO hermes_cli.plugins: Plugin 'krea' registered image_gen provider: krea
+2026-07-11 21:05:06,362 INFO hermes_cli.plugins: Plugin 'openai' registered image_gen provider: openai
+2026-07-11 21:05:06,364 INFO hermes_cli.plugins: Plugin 'openai-codex' registered image_gen provider: openai-codex
+2026-07-11 21:05:06,366 INFO hermes_cli.plugins: Plugin 'openrouter' registered image_gen provider: openrouter
+2026-07-11 21:05:06,366 INFO hermes_cli.plugins: Plugin 'openrouter' registered image_gen provider: nous
+2026-07-11 21:05:06,369 INFO hermes_cli.plugins: Plugin 'xai' registered image_gen provider: xai
+2026-07-11 21:05:06,446 INFO hermes_cli.plugins: Plugin 'fal' registered video_gen provider: fal
+2026-07-11 21:05:06,449 INFO hermes_cli.plugins: Plugin 'xai' registered video_gen provider: xai
+2026-07-11 21:05:06,451 INFO hermes_cli.plugins: Plugin 'web-brave-free' registered web provider: brave-free
+2026-07-11 21:05:06,451 INFO hermes_cli.plugins: Plugin 'web-ddgs' registered web provider: ddgs
+2026-07-11 21:05:06,452 INFO hermes_cli.plugins: Plugin 'web-exa' registered web provider: exa
+2026-07-11 21:05:06,457 INFO hermes_cli.plugins: Plugin 'web-firecrawl' registered web provider: firecrawl
+2026-07-11 21:05:06,458 INFO hermes_cli.plugins: Plugin 'web-parallel' registered web provider: parallel
+2026-07-11 21:05:06,459 INFO hermes_cli.plugins: Plugin 'web-searxng' registered web provider: searxng
+2026-07-11 21:05:06,460 INFO hermes_cli.plugins: Plugin 'web-tavily' registered web provider: tavily
+2026-07-11 21:05:06,462 INFO hermes_cli.plugins: Plugin 'web-xai' registered web provider: xai
+2026-07-11 21:05:06,492 INFO hermes_cli.plugins: Plugin discovery complete: 51 found, 44 enabled
+2026-07-11 21:05:08,567 INFO mcp.client.streamable_http: Negotiated protocol version: 2025-06-18
+2026-07-11 21:05:09,579 INFO tools.mcp_tool: MCP server 'linkup' (HTTP): registered 20 tool(s): mcp__linkup__linkupapi_login, mcp__linkup__linkupapi_checkpoint, mcp__linkup__linkupapi_list_accounts, mcp__linkup__linkupapi_get_account, mcp__linkup__linkupapi_delete_account, mcp__linkup__linkedin_profiles, mcp__linkup__linkedin_messages, mcp__linkup__linkedin_network, mcp__linkup__linkedin_content, mcp__linkup__linkedin_recruiter, mcp__linkup__linkupapi_enrich, mcp__linkup__linkupapi_create_webhook, mcp__linkup__linkupapi_list_webhooks, mcp__linkup__linkupapi_update_webhook, mcp__linkup__linkupapi_delete_webhook, mcp__linkup__linkupapi_start_webhook, mcp__linkup__linkupapi_stop_webhook, mcp__linkup__linkupapi_get_webhook_events, mcp__linkup__linkupapi_get_credits, mcp__linkup__linkupapi_get_logs
+2026-07-11 21:05:09,580 INFO tools.mcp_tool: MCP: registered 20 tool(s) from 1 server(s)
+2026-07-11 21:05:09,580 INFO tools.mcp_tool:   MCP: 20 tool(s) from 1 server(s)
+2026-07-11 21:05:09,614 WARNING tools.registry: check_fn _browser_cdp_check returned False; dependent tools will be unavailable this turn
+2026-07-11 21:05:09,625 WARNING tools.registry: check_fn _browser_dialog_check returned False; dependent tools will be unavailable this turn
+2026-07-11 21:05:09,990 WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-07-11 21:05:09,990 WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 21:06:09.
+2026-07-11 21:05:10,015 WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-07-11 21:05:10,015 WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 21:06:10.
+2026-07-11 21:05:10,015 WARNING tools.registry: check_fn check_browser_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-07-11 21:05:10,015 WARNING tools.registry: check_fn check_close_terminal_requirements returned False; dependent tools will be unavailable this turn
+2026-07-11 21:05:10,026 WARNING tools.registry: check_fn check_computer_use_requirements returned False; dependent tools will be unavailable this turn
+2026-07-11 21:05:10,130 WARNING tools.registry: check_fn _check_kanban_mode returned False; dependent tools will be unavailable this turn
+2026-07-11 21:05:10,134 WARNING tools.registry: check_fn _check_kanban_orchestrator_mode returned False; dependent tools will be unavailable this turn
+2026-07-11 21:05:10,135 WARNING tools.registry: check_fn check_read_terminal_requirements returned False; dependent tools will be unavailable this turn
+2026-07-11 21:05:10,287 WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-07-11 21:05:10,288 WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 21:06:10.
+2026-07-11 21:05:10,314 WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-07-11 21:05:10,314 WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 21:06:10.
+2026-07-11 21:05:10,314 WARNING tools.registry: check_fn check_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-07-11 21:05:10,384 WARNING tools.registry: check_fn check_web_api_key returned False; dependent tools will be unavailable this turn
+2026-07-11 21:05:10,472 WARNING tools.registry: check_fn check_discord_tool_requirements returned False; dependent tools will be unavailable this turn
+2026-07-11 21:05:10,472 WARNING tools.registry: check_fn _check_feishu returned False; dependent tools will be unavailable this turn
+2026-07-11 21:05:10,472 WARNING tools.registry: check_fn _check_feishu returned False; dependent tools will be unavailable this turn
+2026-07-11 21:05:10,567 WARNING tools.registry: check_fn _check_yuanbao returned False; dependent tools will be unavailable this turn
+2026-07-11 21:05:10,568 WARNING tools.registry: check_fn _check_ha_available returned False; dependent tools will be unavailable this turn
+2026-07-11 21:05:10,568 WARNING tools.registry: check_fn _check_spotify_available returned False; dependent tools will be unavailable this turn
+2026-07-11 21:05:10,591 WARNING tools.registry: check_fn check_video_generation_requirements returned False; dependent tools will be unavailable this turn
+2026-07-11 21:05:10,596 WARNING tools.registry: check_fn _check_xai_video_requirements returned False; dependent tools will be unavailable this turn
+2026-07-11 21:05:10,612 WARNING tools.registry: check_fn check_x_search_requirements returned False; dependent tools will be unavailable this turn
+2026-07-11 21:05:10,738 INFO run_agent: Loaded environment variables from /opt/data/profiles/my-agent/.env
+2026-07-11 21:05:10,988 INFO tools.tirith_security: tirith not found — downloading latest release for aarch64-unknown-linux-gnu...
+2026-07-11 21:05:12,090 INFO tools.tirith_security: cosign not on PATH — installing tirith with SHA-256 verification only (install cosign for full supply chain verification)
+2026-07-11 21:05:12,331 INFO tools.tirith_security: tirith installed to /opt/data/profiles/my-agent/bin/tirith (SHA-256 only)
+2026-07-11 21:05:28,221 INFO run_agent: OpenAI client created (agent_init, shared=True) thread=Thread-6 (process_loop):281472359461216 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:05:28,347 INFO [20260711_210508_9fef0e] agent.turn_context: conversation turn: session=20260711_210508_9fef0e model=deepseek/deepseek-v4-flash provider=openrouter platform=cli history=0 msg='can you test look up the current fifa standings on linkup?'
+2026-07-11 21:05:28,527 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-9 (_call):281472334098784 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:05:34,564 INFO run_agent: OpenAI client closed (stream_request_complete, shared=False, tcp_force_closed=0) thread=Thread-9 (_call):281472334098784 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:05:34,566 INFO [20260711_210508_9fef0e] agent.conversation_loop: API call #1: model=deepseek/deepseek-v4-flash provider=openrouter in=21448 out=285 total=21733 latency=6.1s
+2026-07-11 21:05:34,647 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-10 (_call):281472334098784 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:05:39,624 INFO run_agent: OpenAI client closed (stream_request_complete, shared=False, tcp_force_closed=0) thread=Thread-10 (_call):281472334098784 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:05:39,625 INFO [20260711_210508_9fef0e] agent.conversation_loop: API call #2: model=deepseek/deepseek-v4-flash provider=openrouter in=21938 out=93 total=22031 latency=5.0s
+2026-07-11 21:05:39,720 INFO [20260711_210508_9fef0e] tools.browser_tool: Started inactivity cleanup thread (timeout: 120s)
+2026-07-11 21:05:39,731 INFO [20260711_210508_9fef0e] tools.browser_tool: Created local browser session h_a34f2829d3 for task 20260711_210508_9fef0e
+2026-07-11 21:05:42,200 INFO [20260711_210508_9fef0e] agent.tool_executor: tool browser_navigate completed (2.53s, 8742 chars)
+2026-07-11 21:05:42,260 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-11 (_call):281472317190496 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:05:46,665 INFO run_agent: OpenAI client closed (stream_request_complete, shared=False, tcp_force_closed=0) thread=Thread-11 (_call):281472317190496 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:05:46,666 INFO [20260711_210508_9fef0e] agent.conversation_loop: API call #3: model=deepseek/deepseek-v4-flash provider=openrouter in=24589 out=101 total=24690 latency=4.4s cache=3072/24589 (12%)
+2026-07-11 21:05:47,032 INFO [20260711_210508_9fef0e] agent.tool_executor: tool browser_snapshot completed (0.34s, 8513 chars)
+2026-07-11 21:05:47,082 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-12 (_call):281472317190496 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:05:50,067 INFO run_agent: OpenAI client closed (stream_request_complete, shared=False, tcp_force_closed=0) thread=Thread-12 (_call):281472317190496 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:05:50,067 INFO [20260711_210508_9fef0e] agent.conversation_loop: API call #4: model=deepseek/deepseek-v4-flash provider=openrouter in=26865 out=64 total=26929 latency=3.0s cache=3328/26865 (12%)
+2026-07-11 21:05:50,335 INFO [20260711_210508_9fef0e] agent.tool_executor: tool browser_scroll completed (0.25s, 37 chars)
+2026-07-11 21:05:50,386 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-13 (_call):281472317190496 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:05:56,492 INFO run_agent: OpenAI client closed (stream_request_complete, shared=False, tcp_force_closed=0) thread=Thread-13 (_call):281472317190496 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:05:56,492 INFO [20260711_210508_9fef0e] agent.conversation_loop: API call #5: model=deepseek/deepseek-v4-flash provider=openrouter in=26951 out=63 total=27014 latency=6.1s
+2026-07-11 21:05:56,831 INFO [20260711_210508_9fef0e] agent.tool_executor: tool browser_snapshot completed (0.32s, 8513 chars)
+2026-07-11 21:05:56,874 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-14 (_call):281472317190496 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:06:01,453 INFO run_agent: OpenAI client closed (stream_request_complete, shared=False, tcp_force_closed=0) thread=Thread-14 (_call):281472317190496 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:06:01,454 INFO [20260711_210508_9fef0e] agent.conversation_loop: API call #6: model=deepseek/deepseek-v4-flash provider=openrouter in=29787 out=206 total=29993 latency=4.6s cache=20480/29787 (69%)
+2026-07-11 21:06:01,786 INFO [20260711_210508_9fef0e] agent.tool_executor: tool browser_console completed (0.31s, 796 chars)
+2026-07-11 21:06:01,834 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-15 (_call):281472317190496 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:06:10,462 INFO run_agent: OpenAI client closed (stream_request_complete, shared=False, tcp_force_closed=0) thread=Thread-15 (_call):281472317190496 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:06:10,462 INFO [20260711_210508_9fef0e] agent.conversation_loop: API call #7: model=deepseek/deepseek-v4-flash provider=openrouter in=30383 out=416 total=30799 latency=8.7s cache=256/30383 (1%)
+2026-07-11 21:06:10,762 INFO [20260711_210508_9fef0e] agent.tool_executor: tool browser_console completed (0.28s, 916 chars)
+2026-07-11 21:06:10,809 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-16 (_call):281472317190496 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:06:17,214 INFO run_agent: OpenAI client closed (stream_request_complete, shared=False, tcp_force_closed=0) thread=Thread-16 (_call):281472317190496 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:06:17,216 INFO [20260711_210508_9fef0e] agent.conversation_loop: API call #8: model=deepseek/deepseek-v4-flash provider=openrouter in=31135 out=409 total=31544 latency=6.4s cache=3072/31135 (10%)
+2026-07-11 21:06:17,649 INFO [20260711_210508_9fef0e] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=deepseek/deepseek-v4-flash api_calls=8/90 budget=8/90 tool_turns=7 last_msg_role=assistant response_len=1151 session=20260711_210508_9fef0e
+2026-07-11 21:06:17,899 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider openrouter (deepseek/deepseek-v4-flash)
+2026-07-11 21:06:17,905 INFO agent.auxiliary_client: Auxiliary title_generation: using auto (deepseek/deepseek-v4-flash)
+2026-07-11 21:07:14,164 INFO [20260711_210508_9fef0e] agent.turn_context: conversation turn: session=20260711_210508_9fef0e model=deepseek/deepseek-v4-flash provider=openrouter platform=cli history=16 msg='what tools do you have available from the linkup MCP?'
+2026-07-11 21:07:14,218 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-18 (_call):281472317190496 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:07:29,412 INFO run_agent: OpenAI client closed (stream_request_complete, shared=False, tcp_force_closed=0) thread=Thread-18 (_call):281472317190496 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:07:29,412 INFO [20260711_210508_9fef0e] agent.conversation_loop: API call #9: model=deepseek/deepseek-v4-flash provider=openrouter in=31318 out=1639 total=32957 latency=15.2s cache=26880/31318 (86%)
+2026-07-11 21:07:29,432 INFO [20260711_210508_9fef0e] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=deepseek/deepseek-v4-flash api_calls=1/90 budget=1/90 tool_turns=7 last_msg_role=assistant response_len=5626 session=20260711_210508_9fef0e
+2026-07-11 21:08:10,298 INFO tools.mcp_tool: MCP server 'linkup': does not implement the optional 'ping' utility (-32601); using 'list_tools' for keepalive on this connection.
+2026-07-11 21:08:25,970 INFO mcp.client.streamable_http: Negotiated protocol version: 2025-06-18
+2026-07-11 21:08:27,063 INFO tools.mcp_tool: MCP server 'linkup' (HTTP): registered 20 tool(s): mcp__linkup__linkupapi_login, mcp__linkup__linkupapi_checkpoint, mcp__linkup__linkupapi_list_accounts, mcp__linkup__linkupapi_get_account, mcp__linkup__linkupapi_delete_account, mcp__linkup__linkedin_profiles, mcp__linkup__linkedin_messages, mcp__linkup__linkedin_network, mcp__linkup__linkedin_content, mcp__linkup__linkedin_recruiter, mcp__linkup__linkupapi_enrich, mcp__linkup__linkupapi_create_webhook, mcp__linkup__linkupapi_list_webhooks, mcp__linkup__linkupapi_update_webhook, mcp__linkup__linkupapi_delete_webhook, mcp__linkup__linkupapi_start_webhook, mcp__linkup__linkupapi_stop_webhook, mcp__linkup__linkupapi_get_webhook_events, mcp__linkup__linkupapi_get_credits, mcp__linkup__linkupapi_get_logs
+2026-07-11 21:08:27,064 INFO tools.mcp_tool: MCP: registered 20 tool(s) from 1 server(s)
+2026-07-11 21:08:27,064 INFO tools.mcp_tool:   MCP: 20 tool(s) from 1 server(s)
+2026-07-11 21:08:27,109 WARNING tools.registry: check_fn _browser_cdp_check returned False; dependent tools will be unavailable this turn
+2026-07-11 21:08:27,120 WARNING tools.registry: check_fn _browser_dialog_check returned False; dependent tools will be unavailable this turn
+2026-07-11 21:08:27,150 WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-07-11 21:08:27,150 WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 21:09:27.
+2026-07-11 21:08:27,171 WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-07-11 21:08:27,171 WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 21:09:27.
+2026-07-11 21:08:27,171 WARNING tools.registry: check_fn check_browser_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-07-11 21:08:27,171 WARNING tools.registry: check_fn check_close_terminal_requirements returned False; dependent tools will be unavailable this turn
+2026-07-11 21:08:27,172 WARNING tools.registry: check_fn check_computer_use_requirements returned False; dependent tools will be unavailable this turn
+2026-07-11 21:08:27,279 WARNING tools.registry: check_fn _check_kanban_mode returned False; dependent tools will be unavailable this turn
+2026-07-11 21:08:27,285 WARNING tools.registry: check_fn _check_kanban_orchestrator_mode returned False; dependent tools will be unavailable this turn
+2026-07-11 21:08:27,285 WARNING tools.registry: check_fn check_read_terminal_requirements returned False; dependent tools will be unavailable this turn
+2026-07-11 21:08:27,313 WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-07-11 21:08:27,313 WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 21:09:27.
+2026-07-11 21:08:27,334 WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-07-11 21:08:27,334 WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 21:09:27.
+2026-07-11 21:08:27,334 WARNING tools.registry: check_fn check_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-07-11 21:08:27,423 WARNING tools.registry: check_fn check_web_api_key returned False; dependent tools will be unavailable this turn
+2026-07-11 21:08:31,096 INFO mcp.client.streamable_http: Negotiated protocol version: 2025-06-18
+2026-07-11 21:08:32,110 INFO tools.mcp_tool: MCP server 'linkup' (HTTP): registered 20 tool(s): mcp__linkup__linkupapi_login, mcp__linkup__linkupapi_checkpoint, mcp__linkup__linkupapi_list_accounts, mcp__linkup__linkupapi_get_account, mcp__linkup__linkupapi_delete_account, mcp__linkup__linkedin_profiles, mcp__linkup__linkedin_messages, mcp__linkup__linkedin_network, mcp__linkup__linkedin_content, mcp__linkup__linkedin_recruiter, mcp__linkup__linkupapi_enrich, mcp__linkup__linkupapi_create_webhook, mcp__linkup__linkupapi_list_webhooks, mcp__linkup__linkupapi_update_webhook, mcp__linkup__linkupapi_delete_webhook, mcp__linkup__linkupapi_start_webhook, mcp__linkup__linkupapi_stop_webhook, mcp__linkup__linkupapi_get_webhook_events, mcp__linkup__linkupapi_get_credits, mcp__linkup__linkupapi_get_logs
+2026-07-11 21:08:32,111 INFO tools.mcp_tool: MCP: registered 20 tool(s) from 1 server(s)
+2026-07-11 21:08:32,111 INFO tools.mcp_tool:   MCP: 20 tool(s) from 1 server(s)
+2026-07-11 21:08:35,836 INFO mcp.client.streamable_http: Received session ID: bWNw.zF3YWHy2AQt7igM_2Xcm5g
+2026-07-11 21:08:35,874 INFO mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+2026-07-11 21:08:36,009 INFO mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+2026-07-11 21:08:36,491 INFO tools.mcp_tool: MCP server 'linkup' (HTTP): registered 4 tool(s): mcp__linkup__linkup_search, mcp__linkup__linkup_research, mcp__linkup__linkup_get_research, mcp__linkup__linkup_fetch
+2026-07-11 21:08:36,491 INFO tools.mcp_tool: MCP: registered 4 tool(s) from 1 server(s)
+2026-07-11 21:08:36,491 INFO tools.mcp_tool:   MCP: 4 tool(s) from 1 server(s)
+2026-07-11 21:08:46,042 INFO mcp.client.streamable_http: Received session ID: bWNw.Wh6ICOpPZtqxTyqzzonKMQ
+2026-07-11 21:08:46,074 INFO mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+2026-07-11 21:08:46,185 INFO mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+2026-07-11 21:08:46,544 INFO tools.mcp_tool: MCP server 'linkup' (HTTP): registered 4 tool(s): mcp__linkup__linkup_search, mcp__linkup__linkup_research, mcp__linkup__linkup_get_research, mcp__linkup__linkup_fetch
+2026-07-11 21:08:46,544 INFO tools.mcp_tool: MCP: registered 4 tool(s) from 1 server(s)
+2026-07-11 21:08:46,544 INFO tools.mcp_tool:   MCP: 4 tool(s) from 1 server(s)
+2026-07-11 21:08:59,735 INFO mcp.client.streamable_http: Received session ID: bWNw.UQOeDAykUJEQ0u-vimSYfw
+2026-07-11 21:08:59,774 INFO mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+2026-07-11 21:08:59,899 INFO mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+2026-07-11 21:09:01,995 INFO tools.mcp_tool: MCP server 'linkup' (HTTP): registered 4 tool(s): mcp__linkup__linkup_search, mcp__linkup__linkup_research, mcp__linkup__linkup_get_research, mcp__linkup__linkup_fetch
+2026-07-11 21:09:01,996 INFO tools.mcp_tool: MCP: registered 4 tool(s) from 1 server(s)
+2026-07-11 21:09:01,996 INFO tools.mcp_tool:   MCP: 4 tool(s) from 1 server(s)
+2026-07-11 21:09:02,046 WARNING tools.registry: check_fn _browser_cdp_check returned False; dependent tools will be unavailable this turn
+2026-07-11 21:09:02,057 WARNING tools.registry: check_fn _browser_dialog_check returned False; dependent tools will be unavailable this turn
+2026-07-11 21:09:02,085 WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-07-11 21:09:02,085 WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 21:10:02.
+2026-07-11 21:09:02,106 WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-07-11 21:09:02,106 WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 21:10:02.
+2026-07-11 21:09:02,106 WARNING tools.registry: check_fn check_browser_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-07-11 21:09:02,106 WARNING tools.registry: check_fn check_close_terminal_requirements returned False; dependent tools will be unavailable this turn
+2026-07-11 21:09:02,107 WARNING tools.registry: check_fn check_computer_use_requirements returned False; dependent tools will be unavailable this turn
+2026-07-11 21:09:02,212 WARNING tools.registry: check_fn _check_kanban_mode returned False; dependent tools will be unavailable this turn
+2026-07-11 21:09:02,217 WARNING tools.registry: check_fn _check_kanban_orchestrator_mode returned False; dependent tools will be unavailable this turn
+2026-07-11 21:09:02,217 WARNING tools.registry: check_fn check_read_terminal_requirements returned False; dependent tools will be unavailable this turn
+2026-07-11 21:09:02,247 WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-07-11 21:09:02,247 WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 21:10:02.
+2026-07-11 21:09:02,274 WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-07-11 21:09:02,274 WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 21:10:02.
+2026-07-11 21:09:02,274 WARNING tools.registry: check_fn check_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-07-11 21:09:02,351 WARNING tools.registry: check_fn check_web_api_key returned False; dependent tools will be unavailable this turn
+2026-07-11 21:09:17,835 INFO [20260711_210508_9fef0e] agent.turn_context: conversation turn: session=20260711_210508_9fef0e model=deepseek/deepseek-v4-flash provider=openrouter platform=cli history=23 msg='can you check linkup mcp available tools now?'
+2026-07-11 21:09:17,853 INFO [20260711_210508_9fef0e] agent.conversation_loop: Repaired 5 message-alternation violations before request (session=20260711_210508_9fef0e)
+2026-07-11 21:09:17,888 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-24 (_call):281472308736352 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:09:23,458 INFO run_agent: OpenAI client closed (stream_request_complete, shared=False, tcp_force_closed=0) thread=Thread-24 (_call):281472308736352 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:09:23,458 INFO [20260711_210508_9fef0e] agent.conversation_loop: API call #10: model=deepseek/deepseek-v4-flash provider=openrouter in=31917 out=133 total=32050 latency=5.6s cache=1536/31917 (5%)
+2026-07-11 21:09:26,226 INFO [20260711_210508_9fef0e] agent.tool_executor: tool mcp__linkup__linkup_search completed (2.74s, 379 chars)
+2026-07-11 21:09:26,288 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-25 (_call):281472308736352 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:09:32,318 INFO run_agent: OpenAI client closed (stream_request_complete, shared=False, tcp_force_closed=0) thread=Thread-25 (_call):281472308736352 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:09:32,319 INFO [20260711_210508_9fef0e] agent.conversation_loop: API call #11: model=deepseek/deepseek-v4-flash provider=openrouter in=32255 out=342 total=32597 latency=6.1s cache=28672/32255 (89%)
+2026-07-11 21:09:32,368 INFO [20260711_210508_9fef0e] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=deepseek/deepseek-v4-flash api_calls=2/90 budget=2/90 tool_turns=8 last_msg_role=assistant response_len=862 session=20260711_210508_9fef0e
+2026-07-11 21:09:32,482 INFO run_agent: OpenAI client created (agent_init, shared=True) thread=bg-review:281472308736352 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:09:32,549 INFO [20260711_210508_9fef0e] agent.turn_context: conversation turn: session=20260711_210508_9fef0e model=deepseek/deepseek-v4-flash provider=openrouter platform=cli history=22 msg='Review the conversation above and update the skill library. Be ACTIVE — most ses...'
+2026-07-11 21:09:32,617 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-26 (_call):281472325644640 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:09:48,063 INFO [20260711_210508_9fef0e] agent.turn_context: conversation turn: session=20260711_210508_9fef0e model=deepseek/deepseek-v4-flash provider=openrouter platform=cli history=22 msg='awesom can you linkup to look up current fifa standings'
+2026-07-11 21:09:48,111 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-28 (_call):281471948353888 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:09:57,848 INFO run_agent: OpenAI client closed (stream_request_complete, shared=False, tcp_force_closed=0) thread=Thread-28 (_call):281471948353888 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:09:57,849 INFO [20260711_210508_9fef0e] agent.conversation_loop: API call #12: model=deepseek/deepseek-v4-flash provider=openrouter in=32459 out=113 total=32572 latency=9.8s cache=10240/32459 (32%)
+2026-07-11 21:09:59,673 INFO [20260711_210508_9fef0e] agent.tool_executor: tool mcp__linkup__linkup_search completed (1.80s, 17106 chars)
+2026-07-11 21:09:59,738 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-29 (_call):281471948353888 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:10:03,069 INFO run_agent: OpenAI client closed (stream_request_complete, shared=False, tcp_force_closed=0) thread=Thread-26 (_call):281472325644640 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:10:03,071 INFO [20260711_210508_9fef0e] agent.conversation_loop: API call #1: model=deepseek/deepseek-v4-flash provider=openrouter in=33768 out=649 total=34417 latency=30.5s cache=31744/33768 (94%)
+2026-07-11 21:10:03,190 INFO agent.tool_executor: tool skills_list completed (0.10s, 9851 chars)
+2026-07-11 21:10:03,190 INFO agent.tool_executor: tool skills_list completed (0.10s, 137 chars)
+2026-07-11 21:10:03,220 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-30 (_call):281471939899744 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:10:09,930 INFO run_agent: OpenAI client closed (stream_request_complete, shared=False, tcp_force_closed=0) thread=Thread-30 (_call):281471939899744 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:10:09,931 INFO [20260711_210508_9fef0e] agent.conversation_loop: API call #2: model=deepseek/deepseek-v4-flash provider=openrouter in=37071 out=569 total=37640 latency=6.7s cache=34304/37071 (93%)
+2026-07-11 21:10:10,018 INFO [20260711_210508_9fef0e] agent.tool_executor: tool skill_view completed (0.08s, 7337 chars)
+2026-07-11 21:10:10,044 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-31 (_call):281471939899744 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:10:12,375 INFO run_agent: OpenAI client closed (stream_request_complete, shared=False, tcp_force_closed=0) thread=Thread-29 (_call):281471948353888 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:10:12,376 INFO [20260711_210508_9fef0e] agent.conversation_loop: API call #13: model=deepseek/deepseek-v4-flash provider=openrouter in=38229 out=1016 total=39245 latency=12.7s cache=32512/38229 (85%)
+2026-07-11 21:10:12,397 INFO [20260711_210508_9fef0e] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=deepseek/deepseek-v4-flash api_calls=2/90 budget=2/90 tool_turns=9 last_msg_role=assistant response_len=1179 session=20260711_210508_9fef0e
+2026-07-11 21:10:21,896 INFO run_agent: OpenAI client closed (stream_request_complete, shared=False, tcp_force_closed=0) thread=Thread-31 (_call):281471939899744 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:10:21,897 INFO [20260711_210508_9fef0e] agent.conversation_loop: API call #3: model=deepseek/deepseek-v4-flash provider=openrouter in=39753 out=978 total=40731 latency=11.9s cache=8192/39753 (21%)
+2026-07-11 21:10:21,991 INFO [20260711_210508_9fef0e] agent.tool_executor: tool skill_view completed (0.09s, 52622 chars)
+2026-07-11 21:10:22,031 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-32 (_call):281471939899744 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:10:38,302 INFO run_agent: OpenAI client closed (stream_request_complete, shared=False, tcp_force_closed=0) thread=Thread-32 (_call):281471939899744 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:10:38,306 INFO [20260711_210508_9fef0e] agent.conversation_loop: API call #4: model=deepseek/deepseek-v4-flash provider=openrouter in=54899 out=1759 total=56658 latency=16.3s cache=37632/54899 (69%)
+2026-07-11 21:10:38,410 INFO [20260711_210508_9fef0e] agent.tool_executor: tool skill_manage completed (0.09s, 551 chars)
+2026-07-11 21:10:38,442 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-33 (_call):281471939899744 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:10:53,965 INFO run_agent: OpenAI client closed (stream_request_complete, shared=False, tcp_force_closed=0) thread=Thread-33 (_call):281471939899744 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:10:53,966 INFO [20260711_210508_9fef0e] agent.conversation_loop: API call #5: model=deepseek/deepseek-v4-flash provider=openrouter in=56835 out=1183 total=58018 latency=15.6s
+2026-07-11 21:10:54,042 INFO [20260711_210508_9fef0e] agent.tool_executor: tool skill_manage completed (0.06s, 227 chars)
+2026-07-11 21:10:54,076 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-34 (_call):281471939899744 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:10:59,880 INFO run_agent: OpenAI client closed (stream_request_complete, shared=False, tcp_force_closed=0) thread=Thread-34 (_call):281471939899744 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:10:59,880 INFO [20260711_210508_9fef0e] agent.conversation_loop: API call #6: model=deepseek/deepseek-v4-flash provider=openrouter in=58058 out=289 total=58347 latency=5.8s cache=54784/58058 (94%)
+2026-07-11 21:11:00,011 INFO [20260711_210508_9fef0e] agent.tool_executor: tool skill_view completed (0.12s, 6606 chars)
+2026-07-11 21:11:00,041 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-35 (_call):281471939899744 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:11:14,991 INFO run_agent: OpenAI client closed (stream_request_complete, shared=False, tcp_force_closed=0) thread=Thread-35 (_call):281471939899744 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:11:14,992 INFO [20260711_210508_9fef0e] agent.conversation_loop: API call #7: model=deepseek/deepseek-v4-flash provider=openrouter in=60153 out=578 total=60731 latency=15.0s
+2026-07-11 21:11:15,007 INFO [20260711_210508_9fef0e] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=deepseek/deepseek-v4-flash api_calls=7/16 budget=7/16 tool_turns=14 last_msg_role=assistant response_len=1383 session=20260711_210508_9fef0e
+2026-07-11 21:11:15,015 INFO [20260711_210508_9fef0e] run_agent: OpenAI client closed (agent_close, shared=True, tcp_force_closed=0) thread=bg-review:281472308736352 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:19:33,458 INFO cli: CLI cleanup calling memory shutdown for session 20260711_210508_9fef0e with 26 message(s)
+2026-07-11 21:25:08,216 INFO hermes_cli.plugins: Plugin 'browser-browser-use' registered browser provider: browser-use
+2026-07-11 21:25:08,217 INFO hermes_cli.plugins: Plugin 'browser-browserbase' registered browser provider: browserbase
+2026-07-11 21:25:08,218 INFO hermes_cli.plugins: Plugin 'browser-firecrawl' registered browser provider: firecrawl
+2026-07-11 21:25:08,389 INFO hermes_cli.plugins: Plugin 'fal' registered image_gen provider: fal
+2026-07-11 21:25:08,391 INFO hermes_cli.plugins: Plugin 'krea' registered image_gen provider: krea
+2026-07-11 21:25:08,393 INFO hermes_cli.plugins: Plugin 'openai' registered image_gen provider: openai
+2026-07-11 21:25:08,395 INFO hermes_cli.plugins: Plugin 'openai-codex' registered image_gen provider: openai-codex
+2026-07-11 21:25:08,397 INFO hermes_cli.plugins: Plugin 'openrouter' registered image_gen provider: openrouter
+2026-07-11 21:25:08,397 INFO hermes_cli.plugins: Plugin 'openrouter' registered image_gen provider: nous
+2026-07-11 21:25:08,400 INFO hermes_cli.plugins: Plugin 'xai' registered image_gen provider: xai
+2026-07-11 21:25:08,478 INFO hermes_cli.plugins: Plugin 'fal' registered video_gen provider: fal
+2026-07-11 21:25:08,481 INFO hermes_cli.plugins: Plugin 'xai' registered video_gen provider: xai
+2026-07-11 21:25:08,483 INFO hermes_cli.plugins: Plugin 'web-brave-free' registered web provider: brave-free
+2026-07-11 21:25:08,484 INFO hermes_cli.plugins: Plugin 'web-ddgs' registered web provider: ddgs
+2026-07-11 21:25:08,485 INFO hermes_cli.plugins: Plugin 'web-exa' registered web provider: exa
+2026-07-11 21:25:08,489 INFO hermes_cli.plugins: Plugin 'web-firecrawl' registered web provider: firecrawl
+2026-07-11 21:25:08,490 INFO hermes_cli.plugins: Plugin 'web-parallel' registered web provider: parallel
+2026-07-11 21:25:08,491 INFO hermes_cli.plugins: Plugin 'web-searxng' registered web provider: searxng
+2026-07-11 21:25:08,492 INFO hermes_cli.plugins: Plugin 'web-tavily' registered web provider: tavily
+2026-07-11 21:25:08,494 INFO hermes_cli.plugins: Plugin 'web-xai' registered web provider: xai
+2026-07-11 21:25:08,524 INFO hermes_cli.plugins: Plugin discovery complete: 51 found, 44 enabled
+2026-07-11 21:25:10,784 INFO mcp.client.streamable_http: Received session ID: bWNw.DTDV30x1w8IruKOM1H6PPg
+2026-07-11 21:25:10,799 INFO mcp.client.streamable_http: Negotiated protocol version: 2025-11-25
+2026-07-11 21:25:10,945 INFO mcp.client.streamable_http: GET stream disconnected, reconnecting in 1000ms...
+2026-07-11 21:25:11,422 INFO tools.mcp_tool: MCP server 'linkup' (HTTP): registered 4 tool(s): mcp__linkup__linkup_search, mcp__linkup__linkup_research, mcp__linkup__linkup_get_research, mcp__linkup__linkup_fetch
+2026-07-11 21:25:11,424 INFO tools.mcp_tool: MCP: registered 4 tool(s) from 1 server(s)
+2026-07-11 21:25:11,424 INFO tools.mcp_tool:   MCP: 4 tool(s) from 1 server(s)
+2026-07-11 21:25:11,801 WARNING tools.registry: check_fn _browser_cdp_check returned False; dependent tools will be unavailable this turn
+2026-07-11 21:25:11,812 WARNING tools.registry: check_fn _browser_dialog_check returned False; dependent tools will be unavailable this turn
+2026-07-11 21:25:11,925 WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-07-11 21:25:11,925 WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 21:26:11.
+2026-07-11 21:25:11,954 WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-07-11 21:25:11,954 WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 21:26:11.
+2026-07-11 21:25:11,954 WARNING tools.registry: check_fn check_browser_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-07-11 21:25:11,955 WARNING tools.registry: check_fn check_close_terminal_requirements returned False; dependent tools will be unavailable this turn
+2026-07-11 21:25:11,966 WARNING tools.registry: check_fn check_computer_use_requirements returned False; dependent tools will be unavailable this turn
+2026-07-11 21:25:12,079 WARNING tools.registry: check_fn _check_kanban_mode returned False; dependent tools will be unavailable this turn
+2026-07-11 21:25:12,083 WARNING tools.registry: check_fn _check_kanban_orchestrator_mode returned False; dependent tools will be unavailable this turn
+2026-07-11 21:25:12,083 WARNING tools.registry: check_fn check_read_terminal_requirements returned False; dependent tools will be unavailable this turn
+2026-07-11 21:25:12,270 WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-07-11 21:25:12,270 WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 21:26:12.
+2026-07-11 21:25:12,303 WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-07-11 21:25:12,303 WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 21:26:12.
+2026-07-11 21:25:12,303 WARNING tools.registry: check_fn check_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-07-11 21:25:12,375 WARNING tools.registry: check_fn check_web_api_key returned False; dependent tools will be unavailable this turn
+2026-07-11 21:25:12,393 WARNING tools.registry: check_fn check_discord_tool_requirements returned False; dependent tools will be unavailable this turn
+2026-07-11 21:25:12,393 WARNING tools.registry: check_fn _check_feishu returned False; dependent tools will be unavailable this turn
+2026-07-11 21:25:12,393 WARNING tools.registry: check_fn _check_feishu returned False; dependent tools will be unavailable this turn
+2026-07-11 21:25:12,491 WARNING tools.registry: check_fn _check_yuanbao returned False; dependent tools will be unavailable this turn
+2026-07-11 21:25:12,491 WARNING tools.registry: check_fn _check_ha_available returned False; dependent tools will be unavailable this turn
+2026-07-11 21:25:12,492 WARNING tools.registry: check_fn _check_spotify_available returned False; dependent tools will be unavailable this turn
+2026-07-11 21:25:12,516 WARNING tools.registry: check_fn check_video_generation_requirements returned False; dependent tools will be unavailable this turn
+2026-07-11 21:25:12,523 WARNING tools.registry: check_fn _check_xai_video_requirements returned False; dependent tools will be unavailable this turn
+2026-07-11 21:25:12,544 WARNING tools.registry: check_fn check_x_search_requirements returned False; dependent tools will be unavailable this turn
+2026-07-11 21:25:12,699 INFO run_agent: Loaded environment variables from /opt/data/profiles/my-agent/.env
+2026-07-11 21:27:10,115 INFO run_agent: OpenAI client created (agent_init, shared=True) thread=Thread-5 (process_loop):281473184493920 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:27:10,262 INFO [20260711_212510_86126f] agent.turn_context: conversation turn: session=20260711_212510_86126f model=deepseek/deepseek-v4-flash provider=openrouter platform=cli history=0 msg="All right, I'm starting a company which manufactures and sells soccer balls in S..."
+2026-07-11 21:27:10,458 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-8 (_call):281472954986848 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:27:22,177 INFO run_agent: OpenAI client closed (stream_request_complete, shared=False, tcp_force_closed=0) thread=Thread-8 (_call):281472954986848 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:27:22,178 INFO [20260711_212510_86126f] agent.conversation_loop: API call #1: model=deepseek/deepseek-v4-flash provider=openrouter in=21447 out=933 total=22380 latency=11.8s
+2026-07-11 21:27:22,235 INFO [20260711_212510_86126f] agent.tool_executor: tool todo completed (0.00s, 910 chars)
+2026-07-11 21:27:22,279 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-9 (_call):281472954986848 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:27:33,236 INFO run_agent: OpenAI client closed (stream_request_complete, shared=False, tcp_force_closed=0) thread=Thread-9 (_call):281472954986848 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:27:33,237 INFO [20260711_212510_86126f] agent.conversation_loop: API call #2: model=deepseek/deepseek-v4-flash provider=openrouter in=22668 out=578 total=23246 latency=11.0s cache=20480/22668 (90%)
+2026-07-11 21:27:35,395 INFO [20260711_212510_86126f] agent.tool_executor: tool mcp__linkup__linkup_search completed (2.13s, 12906 chars)
+2026-07-11 21:27:38,265 INFO [20260711_212510_86126f] agent.tool_executor: tool mcp__linkup__linkup_search completed (1.84s, 4656 chars)
+2026-07-11 21:27:41,284 INFO [20260711_212510_86126f] agent.tool_executor: tool mcp__linkup__linkup_search completed (2.00s, 10545 chars)
+2026-07-11 21:27:44,523 INFO [20260711_212510_86126f] agent.tool_executor: tool mcp__linkup__linkup_search completed (2.21s, 13555 chars)
+2026-07-11 21:27:47,180 INFO [20260711_212510_86126f] agent.tool_executor: tool mcp__linkup__linkup_search completed (1.63s, 12471 chars)
+2026-07-11 21:27:50,850 INFO [20260711_212510_86126f] agent.tool_executor: tool mcp__linkup__linkup_search completed (2.65s, 6628 chars)
+2026-07-11 21:27:50,899 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-10 (_call):281472954986848 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:28:31,263 INFO run_agent: OpenAI client closed (stream_request_complete, shared=False, tcp_force_closed=0) thread=Thread-10 (_call):281472954986848 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:28:31,264 INFO [20260711_212510_86126f] agent.conversation_loop: API call #3: model=deepseek/deepseek-v4-flash provider=openrouter in=37967 out=663 total=38630 latency=40.4s
+2026-07-11 21:28:34,190 INFO [20260711_212510_86126f] agent.tool_executor: tool mcp__linkup__linkup_search completed (2.91s, 15291 chars)
+2026-07-11 21:28:37,599 INFO [20260711_212510_86126f] agent.tool_executor: tool mcp__linkup__linkup_search completed (2.36s, 13151 chars)
+2026-07-11 21:28:40,729 INFO [20260711_212510_86126f] agent.tool_executor: tool mcp__linkup__linkup_search completed (2.10s, 12180 chars)
+2026-07-11 21:28:43,553 INFO [20260711_212510_86126f] agent.tool_executor: tool mcp__linkup__linkup_search completed (1.76s, 11299 chars)
+2026-07-11 21:28:46,767 INFO [20260711_212510_86126f] agent.tool_executor: tool mcp__linkup__linkup_search completed (2.20s, 16718 chars)
+2026-07-11 21:28:48,809 INFO [20260711_212510_86126f] agent.tool_executor: tool mcp__linkup__linkup_search completed (1.01s, 17519 chars)
+2026-07-11 21:28:50,944 INFO [20260711_212510_86126f] agent.tool_executor: tool mcp__linkup__linkup_search completed (1.10s, 17678 chars)
+2026-07-11 21:28:51,027 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-11 (_call):281472954986848 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:29:03,192 INFO run_agent: OpenAI client closed (stream_request_complete, shared=False, tcp_force_closed=0) thread=Thread-11 (_call):281472954986848 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:29:03,193 INFO [20260711_212510_86126f] agent.conversation_loop: API call #4: model=deepseek/deepseek-v4-flash provider=openrouter in=64027 out=618 total=64645 latency=12.2s cache=22528/64027 (35%)
+2026-07-11 21:29:05,915 INFO [20260711_212510_86126f] agent.tool_executor: tool mcp__linkup__linkup_search completed (2.69s, 10748 chars)
+2026-07-11 21:29:08,718 INFO [20260711_212510_86126f] agent.tool_executor: tool mcp__linkup__linkup_search completed (1.77s, 10965 chars)
+2026-07-11 21:29:11,649 INFO [20260711_212510_86126f] agent.tool_executor: tool mcp__linkup__linkup_search completed (1.90s, 12226 chars)
+2026-07-11 21:29:14,390 INFO [20260711_212510_86126f] agent.tool_executor: tool mcp__linkup__linkup_search completed (1.71s, 4934 chars)
+2026-07-11 21:29:16,768 INFO [20260711_212510_86126f] agent.tool_executor: tool mcp__linkup__linkup_search completed (1.36s, 24797 chars)
+2026-07-11 21:29:18,927 INFO [20260711_212510_86126f] agent.tool_executor: tool mcp__linkup__linkup_search completed (1.12s, 25167 chars)
+2026-07-11 21:29:19,007 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-12 (_call):281472954986848 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:29:27,349 INFO run_agent: OpenAI client closed (stream_request_complete, shared=False, tcp_force_closed=0) thread=Thread-12 (_call):281472954986848 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:29:27,351 INFO [20260711_212510_86126f] agent.conversation_loop: API call #5: model=deepseek/deepseek-v4-flash provider=openrouter in=87188 out=293 total=87481 latency=8.4s
+2026-07-11 21:29:28,495 WARNING [20260711_212510_86126f] agent.tool_executor: Tool mcp__linkup__linkup_fetch returned error (1.12s): {"error": "An error occurred while executing Linkup client: An error occurred while fetching the URL"}
+2026-07-11 21:29:31,565 INFO [20260711_212510_86126f] agent.tool_executor: tool mcp__linkup__linkup_search completed (2.00s, 14338 chars)
+2026-07-11 21:29:31,632 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-13 (_call):281472954986848 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:29:43,515 INFO run_agent: OpenAI client closed (stream_request_complete, shared=False, tcp_force_closed=0) thread=Thread-13 (_call):281472954986848 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:29:43,516 INFO [20260711_212510_86126f] agent.conversation_loop: API call #6: model=deepseek/deepseek-v4-flash provider=openrouter in=90864 out=527 total=91391 latency=11.9s cache=63488/90864 (70%)
+2026-07-11 21:29:43,544 INFO [20260711_212510_86126f] agent.tool_executor: tool todo completed (0.00s, 1022 chars)
+2026-07-11 21:29:43,607 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-14 (_call):281472954986848 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:30:29,370 INFO run_agent: OpenAI client closed (stream_request_complete, shared=False, tcp_force_closed=0) thread=Thread-14 (_call):281472954986848 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:30:29,375 INFO [20260711_212510_86126f] agent.conversation_loop: API call #7: model=deepseek/deepseek-v4-flash provider=openrouter in=91828 out=4756 total=96584 latency=45.8s
+2026-07-11 21:30:29,423 INFO [20260711_212510_86126f] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=deepseek/deepseek-v4-flash api_calls=7/90 budget=7/90 tool_turns=6 last_msg_role=assistant response_len=18717 session=20260711_212510_86126f
+2026-07-11 21:30:29,790 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider openrouter (deepseek/deepseek-v4-flash)
+2026-07-11 21:30:29,819 INFO agent.auxiliary_client: Auxiliary title_generation: using auto (deepseek/deepseek-v4-flash)
+2026-07-11 21:37:11,269 INFO [20260711_212510_86126f] agent.turn_context: conversation turn: session=20260711_212510_86126f model=deepseek/deepseek-v4-flash provider=openrouter platform=cli history=31 msg='hermes profile export my-agent'
+2026-07-11 21:37:11,346 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-16 (_call):281472954986848 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:37:36,602 INFO run_agent: OpenAI client closed (stream_request_complete, shared=False, tcp_force_closed=0) thread=Thread-16 (_call):281472954986848 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:37:36,604 INFO [20260711_212510_86126f] agent.conversation_loop: API call #8: model=deepseek/deepseek-v4-flash provider=openrouter in=96593 out=89 total=96682 latency=25.3s
+2026-07-11 21:37:36,673 INFO [20260711_212510_86126f] tools.terminal_tool: Creating new local environment for task default...
+2026-07-11 21:37:36,695 INFO [20260711_212510_86126f] tools.environments.base: Session snapshot created (session=f3bc33d1693d, cwd=/opt/hermes)
+2026-07-11 21:37:36,695 INFO [20260711_212510_86126f] tools.terminal_tool: local environment ready for task default
+2026-07-11 21:37:36,808 WARNING [20260711_212510_86126f] agent.tool_executor: Tool terminal returned error (0.14s): {"output": "/usr/bin/bash: line 3: hermes: command not found", "exit_code": 127, "error": null}
+2026-07-11 21:37:36,853 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-20 (_call):281472934932832 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:38:08,858 INFO run_agent: OpenAI client closed (stream_request_complete, shared=False, tcp_force_closed=0) thread=Thread-20 (_call):281472934932832 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:38:08,859 INFO [20260711_212510_86126f] agent.conversation_loop: API call #9: model=deepseek/deepseek-v4-flash provider=openrouter in=96723 out=152 total=96875 latency=32.0s
+2026-07-11 21:38:09,403 INFO [20260711_212510_86126f] agent.tool_executor: tool terminal completed (0.52s, 117 chars)
+2026-07-11 21:38:09,456 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-22 (_call):281472934932832 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:38:45,555 INFO run_agent: OpenAI client closed (stream_request_complete, shared=False, tcp_force_closed=0) thread=Thread-22 (_call):281472934932832 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:38:45,559 INFO [20260711_212510_86126f] agent.conversation_loop: API call #10: model=deepseek/deepseek-v4-flash provider=openrouter in=96802 out=92 total=96894 latency=36.1s cache=90112/96802 (93%)
+2026-07-11 21:38:47,091 WARNING [20260711_212510_86126f] agent.tool_executor: Tool terminal returned error (1.50s): {"output": "Traceback (most recent call last):\n  File \"/opt/hermes/.venv/bin/hermes\", line 10, in <module>\n    sys.exit(main())\n             ~~~~^^\n  File \"/opt/hermes/hermes_cli/main.py\", lin
+2026-07-11 21:38:47,165 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-24 (_call):281472934932832 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:38:52,849 INFO run_agent: OpenAI client closed (stream_request_complete, shared=False, tcp_force_closed=0) thread=Thread-24 (_call):281472934932832 provider=openrouter base_url=https://openrouter.ai/api/v1 model=deepseek/deepseek-v4-flash
+2026-07-11 21:38:52,850 INFO [20260711_212510_86126f] agent.conversation_loop: API call #11: model=deepseek/deepseek-v4-flash provider=openrouter in=97450 out=105 total=97555 latency=5.7s

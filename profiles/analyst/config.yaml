@@ -1,0 +1,8 @@
+model:
+  provider: openrouter
+  default: deepseek/deepseek-v4-flash
+mcp_servers:
+  linkup:
+    url: "https://mcp.linkup.so/mcp?apiKey=33f6d68f-48a5-4785-a0ce-1685bc1bc44b"
+    connect_timeout: 60
+    timeout: 180
