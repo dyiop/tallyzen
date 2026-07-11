@@ -54,12 +54,24 @@ def _ledger(name, parent, extra=""):
     )
 
 
-def _stockitem(name):
+def _unit(symbol):
+    # A stock item's BASEUNITS must reference a Unit of Measure that already
+    # exists, so these UNIT masters have to be emitted before any stock item.
+    return (
+        '<TALLYMESSAGE>\n'
+        '<UNIT NAME="' + _esc(symbol) + '" ACTION="Create">\n'
+        '<NAME>' + _esc(symbol) + '</NAME>\n'
+        '<ISSIMPLEUNIT>Yes</ISSIMPLEUNIT>\n'
+        '</UNIT>\n</TALLYMESSAGE>\n'
+    )
+
+
+def _stockitem(name, unit):
     return (
         '<TALLYMESSAGE>\n'
         '<STOCKITEM NAME="' + _esc(name) + '" ACTION="Create">\n'
         '<NAME>' + _esc(name) + '</NAME>\n'
-        '<BASEUNITS>kg</BASEUNITS>\n'
+        '<BASEUNITS>' + _esc(unit) + '</BASEUNITS>\n'
         '</STOCKITEM>\n</TALLYMESSAGE>\n'
     )
 
@@ -85,9 +97,16 @@ def build_masters():
     for v in BOOKS["vendors"]:
         gstin = '<PARTYGSTIN>' + _esc(v["gstin"]) + '</PARTYGSTIN>\n'
         parts.append(_ledger(v["name"], "Sundry Creditors", gstin))
+    # Units of measure — must be created before any stock item references them
+    seen_units = []
+    for it in BOOKS["stock_items"]:
+        unit = it.get("unit", "kg")
+        if unit not in seen_units:
+            seen_units.append(unit)
+            parts.append(_unit(unit))
     # Stock items
     for it in BOOKS["stock_items"]:
-        parts.append(_stockitem(it["item"]))
+        parts.append(_stockitem(it["item"], it.get("unit", "kg")))
     return _envelope("".join(parts))
 
 
