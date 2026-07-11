@@ -1,0 +1,17 @@
+name: tally
+version: 0.1.0
+description: "TallyPrime access for the Accountant agent — reads the live books (sales by destination/product, receivables, cash, GST, trend), looks up vendors, and posts vouchers. Talks JSON to the Tally connector (real Tally or seeded dataset); the agent never sees XML."
+author: Tallyzen (Hermes Buildathon)
+kind: standalone
+platforms:
+  - macos
+  - linux
+provides_tools:
+  - tally_sales_by_destination
+  - tally_sales_by_product
+  - tally_receivables
+  - tally_cash_position
+  - tally_gst_position
+  - tally_sales_trend
+  - tally_find_vendor
+  - tally_post_voucher
