@@ -1,2 +1,5 @@
 __pycache__/
 *.pyc
+memory/convex/node_modules/
+memory/convex/.env.local
+memory/convex/convex/_generated/
