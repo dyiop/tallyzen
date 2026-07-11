@@ -3,3 +3,4 @@ __pycache__/
 memory/convex/node_modules/
 memory/convex/.env.local
 memory/convex/convex/_generated/
+memory/convex/.agents/
