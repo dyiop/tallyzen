@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { background: #eceff3; font-family: "Helvetica Neue", Arial, sans-serif; color: #1f2933; }
+  .sheet {
+    width: 780px; margin: 20px auto; background: #fff; padding: 34px 40px 30px;
+    border: 1px solid #d5dae1; box-shadow: 0 2px 10px rgba(0,0,0,.08);
+  }
+  .tag { text-align: center; letter-spacing: 3px; font-size: 13px; color: #7b8794; margin-bottom: 14px; }
+  .top { display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 2px solid #14345c; padding-bottom: 16px; }
+  .seller h1 { font-size: 22px; color: #14345c; margin-bottom: 4px; }
+  .seller p { font-size: 12px; line-height: 1.55; color: #52616b; }
+  .seller .gst { margin-top: 6px; font-size: 12px; color: #1f2933; font-weight: 600; }
+  .badge { text-align: right; }
+  .badge .word { font-size: 20px; font-weight: 700; color: #14345c; letter-spacing: 1px; }
+  .badge .orig { font-size: 11px; color: #7b8794; margin-top: 2px; }
+  .meta { display: flex; justify-content: space-between; margin-top: 18px; gap: 24px; }
+  .box { flex: 1; }
+  .box .lbl { font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: #9aa5b1; margin-bottom: 5px; }
+  .box .val { font-size: 13px; line-height: 1.55; }
+  .box .val b { color: #14345c; }
+  table { width: 100%; border-collapse: collapse; margin-top: 22px; font-size: 12.5px; }
+  thead th { background: #14345c; color: #fff; text-align: left; padding: 9px 10px; font-weight: 600; }
+  thead th.num, tbody td.num { text-align: right; }
+  tbody td { padding: 11px 10px; border-bottom: 1px solid #e4e7eb; }
+  tbody tr:nth-child(even) td { background: #f7f9fb; }
+  .totals { margin-top: 14px; margin-left: auto; width: 300px; font-size: 13px; }
+  .totals .row { display: flex; justify-content: space-between; padding: 5px 4px; }
+  .totals .row.grand { border-top: 2px solid #14345c; margin-top: 6px; padding-top: 9px; font-size: 16px; font-weight: 700; color: #14345c; }
+  .words { margin-top: 18px; font-size: 12px; color: #52616b; }
+  .words b { color: #1f2933; }
+  .foot { display: flex; justify-content: space-between; align-items: flex-end; margin-top: 34px; }
+  .bank { font-size: 11px; color: #52616b; line-height: 1.6; }
+  .sign { text-align: center; font-size: 11px; color: #52616b; }
+  .sign .line { width: 170px; border-top: 1px solid #9aa5b1; margin-bottom: 4px; }
+  .note { text-align: center; font-size: 10px; color: #b0b8c1; margin-top: 22px; border-top: 1px dashed #d5dae1; padding-top: 10px; }
+</style>
+</head>
+<body>
+  <div class="sheet">
+    <div class="tag">T A X&nbsp;&nbsp;&nbsp;I N V O I C E</div>
+    <div class="top">
+      <div class="seller">
+        <h1>Coastal Packaging Pvt Ltd</h1>
+        <p>18, SIDCO Industrial Estate, Ettayapuram Road<br>Thoothukudi, Tamil Nadu &ndash; 628008<br>Phone: 0461&nbsp;2352110 &nbsp;·&nbsp; care@coastalpack.in</p>
+        <p class="gst">GSTIN: 33AAECC5678L1Z3 &nbsp;|&nbsp; State: Tamil Nadu (33)</p>
+      </div>
+      <div class="badge">
+        <div class="word">INVOICE</div>
+        <div class="orig">ORIGINAL FOR RECIPIENT</div>
+      </div>
+    </div>
+
+    <div class="meta">
+      <div class="box">
+        <div class="lbl">Billed To</div>
+        <div class="val"><b>Meenakshi Marine Exports</b><br>Plot 14, Harbour Estate Road<br>Roche Park, Thoothukudi, Tamil Nadu &ndash; 628004<br>GSTIN: 33AABCM1234K1Z9 &nbsp;|&nbsp; State: Tamil Nadu (33)</div>
+      </div>
+      <div class="box" style="max-width:210px">
+        <div class="lbl">Invoice Details</div>
+        <div class="val">Invoice No: <b>CP/INV-2231</b><br>Invoice Date: <b>02-Jul-2026</b><br>Place of Supply: Tamil Nadu (33)<br>Reverse Charge: No</div>
+      </div>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th style="width:34px">#</th>
+          <th>Description of Goods</th>
+          <th style="width:70px">HSN</th>
+          <th class="num" style="width:70px">Qty</th>
+          <th class="num" style="width:80px">Rate</th>
+          <th class="num" style="width:100px">Amount (₹)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Thermocol export boxes (5 kg)</td>
+          <td>3923</td>
+          <td class="num">3,000 Nos</td>
+          <td class="num">50.00</td>
+          <td class="num">1,50,000.00</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="totals">
+      <div class="row"><span>Taxable Value</span><span>₹ 1,50,000.00</span></div>
+      <div class="row"><span>CGST @ 9%</span><span>₹ 13,500.00</span></div>
+      <div class="row"><span>SGST @ 9%</span><span>₹ 13,500.00</span></div>
+      <div class="row grand"><span>Total</span><span>₹ 1,77,000.00</span></div>
+    </div>
+
+    <div class="words">Amount Chargeable (in words): <b>Rupees One Lakh Seventy-Seven Thousand Only</b></div>
+
+    <div class="foot">
+      <div class="bank">
+        <b>Bank Details</b><br>
+        Coastal Packaging Pvt Ltd &nbsp;·&nbsp; A/c 50200 4471 2280<br>
+        HDFC Bank, Thoothukudi &nbsp;·&nbsp; IFSC HDFC0001547
+      </div>
+      <div class="sign">
+        <div class="line"></div>
+        Authorised Signatory<br>for Coastal Packaging Pvt Ltd
+      </div>
+    </div>
+
+    <div class="note">Sample invoice generated for the Tallyzen demo · fictional parties &amp; GSTINs · not a real financial document</div>
+  </div>
+</body>
+</html>
